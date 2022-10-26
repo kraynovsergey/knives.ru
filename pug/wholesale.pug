@@ -1,0 +1,36 @@
+doctype html
+html(lang="ru")
+    head
+        - var seo = {title: 'Оптом', description: 'Описание оптом', keywords: 'Ключи оптом'}
+        include includes/_meta
+    body
+        include includes/_header
+
+        main.main
+            include includes/_breadcrumbs
+
+            section.section.text._pt0
+                .container
+                    h1.h1 Оптом
+
+                    .text__block
+                        p Корпоративным клиентам и оптовым покупателям.
+                        p
+                            strong Мы предлагаем возможность оплаты на расчетный счет, а также оптовую систему скидок:
+                        p При заказе от 50 000 р – 7%<br>От 100 000 р – 10 %<br>От 200 000 р – 15%<br>От 500 000 р – 20%
+                        p Вся продукция имеет высокое качество и заводскую сборку.<br>Мы гарантируем подлинность изделий, так как работаем непосредственно с производителями ножей.
+
+                    .text__contacts
+                        .text__contacts-title Контакты
+                        a.text__contacts-link(href="mailto:info@knives.ru") info@knives.ru
+                        a.text__contacts-link(href="tel:+78005555555") 8-800-555-55-55
+
+        include includes/_footer
+
+        include includes/_panel
+
+        include includes/_svg
+
+        include includes/_modal
+
+        include includes/_scripts

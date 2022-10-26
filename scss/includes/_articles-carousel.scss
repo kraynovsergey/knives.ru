@@ -1,0 +1,50 @@
+.articles-carousel {
+	position: relative;
+
+	&__carousel {
+		padding-right: 90px;
+		position: relative;
+
+		@media (max-width: 575px) {
+			padding-right: 20px;
+			margin-right: -20px;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			width: 90px;
+			background: linear-gradient(270deg, #F1F3F8 0%, rgba(241, 243, 248, 0) 100%);
+			z-index: 5;
+
+			@media (max-width: 575px) {
+				display: none;
+			}
+		}
+	}
+
+	&__arrows {
+		@media (max-width: 991px) {
+			display: none;
+		}
+
+		& button {
+			top: calc(50% - 120px);
+		}
+	}
+
+	&__slide {
+		width: 430px;
+
+		@media (max-width: 991px) {
+			width: 300px;
+		}
+
+		&._all {
+			width: 264px;
+		}
+	}
+}

@@ -1,0 +1,33 @@
+doctype html
+html(lang="ru")
+    head
+        - var seo = {title: 'Избранное', description: 'Избранное', keywords: 'Избранное'}
+        include includes/_meta
+    body
+        - var favouriteClass = '_active'
+        include includes/_header
+
+        main.main
+            - var breadcrumbs = 'small'
+            include includes/_breadcrumbs
+
+            section.section.empty._pt0
+                .container
+                    .empty__cols
+                        .empty__col
+                            h1.h1 Избранное
+
+                        .empty__col
+                            .empty__text На данный момент Вы не добавили ни одного товара в избранное
+                            a.empty__link(href="categories.html") Перейти в каталог
+
+        include includes/_footer
+
+        - var panelFavouriteClass = '_active';
+        include includes/_panel
+
+        include includes/_svg
+
+        include includes/_modal
+
+        include includes/_scripts

@@ -1,0 +1,109 @@
+doctype html
+html(lang="ru")
+    head
+        - var seo = {title: 'Статьи', description: 'Описание статей', keywords: 'Ключи статей'}
+        include includes/_meta
+    body
+        include includes/_header
+
+        main.main
+            include includes/_breadcrumbs
+
+            section.section.articles._pt0
+                .container
+                    h1.h1 Статьи
+                        sup 23 шт.
+
+                    .articles__cols
+                        .articles__col
+                            .article
+                                picture.article__picture
+                                    source(type="image/webp" srcset="img/tmp/article-1@2x.webp 2x, img/tmp/article-1.webp 1x")
+                                    source(type="image/jpeg" srcset="img/tmp/article-1@2x.jpg 2x, img/tmp/article-1.jpg 1x")
+                                    img(src="img/tmp/article-1.jpg" alt="" width="430" height="264")
+                                .article__date 20 Сентября 2021
+                                a.article__title(href="index.html") Lorem ipsum dolor sit amet, cosectetur adipiscing elit, seeismod tempor idiunt ut labore et dolore magna
+
+                        .articles__col
+                            .article
+                                picture.article__picture
+                                    source(type="image/webp" srcset="img/tmp/article-2@2x.webp 2x, img/tmp/article-2.webp 1x")
+                                    source(type="image/jpeg" srcset="img/tmp/article-2@2x.jpg 2x, img/tmp/article-2.jpg 1x")
+                                    img(src="img/tmp/article-2.jpg" alt="" width="430" height="264")
+                                .article__date 20 Сентября 2021
+                                a.article__title(href="index.html") Lorem ipsum dolor sit amet
+
+                        .articles__col
+                            .article
+                                picture.article__picture
+                                    source(type="image/webp" srcset="img/tmp/article-3@2x.webp 2x, img/tmp/article-3.webp 1x")
+                                    source(type="image/jpeg" srcset="img/tmp/article-3@2x.jpg 2x, img/tmp/article-3.jpg 1x")
+                                    img(src="img/tmp/article-3.jpg" alt="" width="430" height="264")
+                                .article__date 20 Сентября 2021
+                                a.article__title(href="index.html") Lorem ipsum dolor sit amet, consectetur adipiscing elit, seeismod tempor incididunt ut labore et dolore magna aliqua.
+
+                        .articles__col
+                            .article
+                                picture.article__picture
+                                    source(type="image/webp" srcset="img/tmp/article-1@2x.webp 2x, img/tmp/article-1.webp 1x")
+                                    source(type="image/jpeg" srcset="img/tmp/article-1@2x.jpg 2x, img/tmp/article-1.jpg 1x")
+                                    img(src="img/tmp/article-1.jpg" alt="" width="430" height="264")
+                                .article__date 20 Сентября 2021
+                                a.article__title(href="index.html") Lorem ipsum dolor sit amet, cosectetur adipiscing elit, seeismod tempor idiunt ut labore et dolore magna
+
+                        .articles__col
+                            .article
+                                picture.article__picture
+                                    source(type="image/webp" srcset="img/tmp/article-2@2x.webp 2x, img/tmp/article-2.webp 1x")
+                                    source(type="image/jpeg" srcset="img/tmp/article-2@2x.jpg 2x, img/tmp/article-2.jpg 1x")
+                                    img(src="img/tmp/article-2.jpg" alt="" width="430" height="264")
+                                .article__date 20 Сентября 2021
+                                a.article__title(href="index.html") Lorem ipsum dolor sit amet
+
+                        .articles__col
+                            .article
+                                picture.article__picture
+                                    source(type="image/webp" srcset="img/tmp/article-3@2x.webp 2x, img/tmp/article-3.webp 1x")
+                                    source(type="image/jpeg" srcset="img/tmp/article-3@2x.jpg 2x, img/tmp/article-3.jpg 1x")
+                                    img(src="img/tmp/article-3.jpg" alt="" width="430" height="264")
+                                .article__date 20 Сентября 2021
+                                a.article__title(href="index.html") Lorem ipsum dolor sit amet, consectetur adipiscing elit, seeismod tempor incididunt ut labore et dolore magna aliqua.
+
+                        .articles__col
+                            .article
+                                picture.article__picture
+                                    source(type="image/webp" srcset="img/tmp/article-1@2x.webp 2x, img/tmp/article-1.webp 1x")
+                                    source(type="image/jpeg" srcset="img/tmp/article-1@2x.jpg 2x, img/tmp/article-1.jpg 1x")
+                                    img(src="img/tmp/article-1.jpg" alt="" width="430" height="264")
+                                .article__date 20 Сентября 2021
+                                a.article__title(href="index.html") Lorem ipsum dolor sit amet, cosectetur adipiscing elit, seeismod tempor idiunt ut labore et dolore magna
+
+                        .articles__col
+                            .article
+                                picture.article__picture
+                                    source(type="image/webp" srcset="img/tmp/article-2@2x.webp 2x, img/tmp/article-2.webp 1x")
+                                    source(type="image/jpeg" srcset="img/tmp/article-2@2x.jpg 2x, img/tmp/article-2.jpg 1x")
+                                    img(src="img/tmp/article-2.jpg" alt="" width="430" height="264")
+                                .article__date 20 Сентября 2021
+                                a.article__title(href="index.html") Lorem ipsum dolor sit amet
+
+                        .articles__col
+                            .article
+                                picture.article__picture
+                                    source(type="image/webp" srcset="img/tmp/article-3@2x.webp 2x, img/tmp/article-3.webp 1x")
+                                    source(type="image/jpeg" srcset="img/tmp/article-3@2x.jpg 2x, img/tmp/article-3.jpg 1x")
+                                    img(src="img/tmp/article-3.jpg" alt="" width="430" height="264")
+                                .article__date 20 Сентября 2021
+                                a.article__title(href="index.html") Lorem ipsum dolor sit amet, consectetur adipiscing elit, seeismod tempor incididunt ut labore et dolore magna aliqua.
+
+                    include includes/_pagination
+
+        include includes/_footer
+
+        include includes/_panel
+
+        include includes/_svg
+
+        include includes/_modal
+
+        include includes/_scripts

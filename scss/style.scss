@@ -1,0 +1,78 @@
+$color_black: #000033;
+$color_white: #FFFFFF;
+$color_black_opacity: rgba(0, 0, 51, .4);
+$color_blue: #2F80ED;
+$color_blue_light: #D5E6FB;
+$color_blue_middle: rgba(47, 128, 237, 0.7);
+$color_grey: #E2E6EF;
+$color_green: #00CB9A;
+$color_bg: #F1F3F8;
+$color_beige: #F0E5D3;
+$color_beige_dark: #DABE92;
+$color_red: #D94646;
+
+$transition: 0.5s ease;
+
+@import "includes/reboot";
+@import "includes/grid";
+@import "includes/fonts";
+@import "includes/default";
+@import "includes/svg";
+@import "includes/ui";
+
+@import "includes/header";
+@import "includes/header-top";
+@import "includes/search";
+@import "includes/header-catalog";
+@import "includes/scroll";
+@import "includes/panel";
+@import "includes/main";
+@import "includes/tags";
+@import "includes/home-slider";
+@import "includes/section";
+@import "includes/popular";
+@import "includes/product";
+@import "includes/categories-carousel";
+@import "includes/brands";
+@import "includes/articles-carousel";
+@import "includes/article";
+@import "includes/footer";
+@import "includes/breadcrumbs";
+@import "includes/catalog";
+@import "includes/filter-aside";
+@import "includes/filter-content";
+@import "includes/filter-selected";
+@import "includes/pagination";
+@import "includes/modal";
+@import "includes/form";
+@import "includes/product-page";
+@import "includes/reviews";
+@import "includes/compare";
+@import "includes/favourite";
+@import "includes/articles";
+@import "includes/cart";
+@import "includes/cabinet-nav";
+@import "includes/profile";
+@import "includes/order";
+@import "includes/order-product";
+@import "includes/order-param";
+@import "includes/bonus";
+@import "includes/stars";
+@import "includes/subscribe";
+@import "includes/catalog-page";
+@import "includes/text";
+@import "includes/title-nav";
+@import "includes/get-order";
+@import "includes/payment";
+@import "includes/delivery";
+@import "includes/not-found";
+@import "includes/contacts";
+@import "includes/empty";
+@import "includes/slider-progress";
+@import "includes/carousel-pagination";
+
+
+
+
+
+

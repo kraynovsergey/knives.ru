@@ -1,0 +1,16 @@
+.subscribe {
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	width: 100%;
+
+	&__title {
+		font-weight: 600;
+		margin-bottom: 10px;
+		line-height: 120%;
+
+		@media (max-width: 1399px) and (min-width: 1199px) {
+			font-size: .8rem;
+		}
+	}
+}

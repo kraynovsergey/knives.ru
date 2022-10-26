@@ -1,0 +1,789 @@
+header.header
+    .header-top
+        .container.header-top__cols
+            button.header-top__city.arrow-triangle._down._black-opacity(data-src="#modal-choose-city" data-fancybox)
+                svg(width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                    use(xlink:href="#svg-city")
+                | Иваново
+
+            .header-top__col
+                nav.header-top__nav
+                    // Класс _active у активного li
+                    ul
+                        li.arrow-triangle._down._hover._black-opacity
+                            a(href="index.html") Компания
+                            ul
+                                li
+                                    a(href="about.html") О нас
+                                li
+                                    a(href="articles.html") Статьи
+                                li
+                                    a(href="video.html") Видеообзоры
+                                li
+                                    a(href="wholesale.html") Оптом
+                                li
+                                    a(href="cooperation.html") Сотрудничество
+                                li
+                                    a(href="contacts.html") Контакты
+                        li.arrow-triangle._down._hover._black-opacity
+                            a(href="index.html") Покупателям
+                            ul
+                                li
+                                    a(href="get-order.html") Оформить заказ
+                                li
+                                    a(href="payment.html") Оплата
+                                li
+                                    a(href="delivery.html") Доставка
+                                li
+                                    a(href="guarantee.html") Гарантия
+                                li
+                                    a(href="index.html") Отследить заказ
+                        li
+                            a(href="contacts.html") Контакты
+
+                a.header-top__phone(href="tel:+78005553535") +7 800 555 35 35
+
+        .search__opacity._header-top
+
+    .header__content
+        .container.header__cols
+            a.header__logo(href="index.html")
+                svg.header__logo-desktop(width="249" height="26" viewBox="0 0 249 26" fill="none" xmlns="http://www.w3.org/2000/svg")
+                    use(xlink:href="#svg-logo-desktop")
+                svg.header__logo-mobile(width="114" height="32" viewBox="0 0 114 32" fill="none" xmlns="http://www.w3.org/2000/svg")
+                    use(xlink:href="#svg-logo-mobile")
+
+            button.header__catalog(type="button")
+                span.header__catalog-icon
+                    span
+                    span
+                    span
+                | Каталог
+
+            .header__search.search
+                form.search__form(action="search.html")
+                    .search__input
+                        input(type="text" name="search" placeholder="Искать" autocomplete="off")
+                        button.search__reset(type="reset")
+                    button.search__submit(type="submit") Найти
+
+                .search__results
+                    .search__results-result
+                        //.search__tags.swiper
+                            .swiper-wrapper
+                                .search__tags-slide.swiper-slide
+                                    a.search__tag(href="catalog.html") Топ - 10
+                                .search__tags-slide.swiper-slide
+                                    a.search__tag(href="catalog.html") Новинки
+                                .search__tags-slide.swiper-slide
+                                    a.search__tag(href="catalog.html") Хиты
+                                .search__tags-slide.swiper-slide
+                                    a.search__tag(href="catalog.html") Тактические
+                                .search__tags-slide.swiper-slide
+                                    a.search__tag(href="catalog.html") Подарочные
+                                .search__tags-slide.swiper-slide
+                                    a.search__tag(href="catalog.html") Хиты
+                                .search__tags-slide.swiper-slide
+                                    a.search__tag(href="catalog.html") Дамасская сталь
+                                .search__tags-slide.swiper-slide
+                                    a.search__tag(href="catalog.html") Топ - 10
+                                .search__tags-slide.swiper-slide
+                                    a.search__tag(href="catalog.html") Новинки
+                                .search__tags-slide.swiper-slide
+                                    a.search__tag(href="catalog.html") Хиты
+                                .search__tags-slide.swiper-slide
+                                    a.search__tag(href="catalog.html") Тактические
+                                .search__tags-slide.swiper-slide
+                                    a.search__tag(href="catalog.html") Подарочные
+                                .search__tags-slide.swiper-slide
+                                    a.search__tag(href="catalog.html") Хиты
+                                .search__tags-slide.swiper-slide
+                                    a.search__tag(href="catalog.html") Дамасская сталь
+
+                        .search__block
+                            .search__block-items
+                                .search__block-item
+                                    button.search__block-title(type="button" data-value="Складной нож")
+                                        svg(width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            use(xlink:href="#svg-search")
+                                        | Складной нож
+                                    .search__block-description Категория
+
+                                .search__block-item
+                                    button.search__block-title(type="button" data-value="Топ 10 складных")
+                                        svg(width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            use(xlink:href="#svg-search")
+                                        | Топ 10 складных
+                                    .search__block-description Подборка
+
+                                .search__block-item
+                                    button.search__block-title(type="button" data-value="Ножи Самура")
+                                        svg(width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            use(xlink:href="#svg-search")
+                                        | Ножи Самура
+                                    .search__block-description Бренд
+
+                                .search__block-item
+                                    button.search__block-title(type="button" data-value="Ножи 1 000 ₽ - 2 000 ₽")
+                                        svg(width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            use(xlink:href="#svg-search")
+                                        | Ножи 1 000 ₽ - 2 000 ₽
+                                    .search__block-description По цене
+
+                        .search__items.scroll
+                            .search__item
+                                .search__item-col
+                                    picture.search__item-picture
+                                        source(type="image/webp" srcset="img/tmp/search-result@2x.webp 2x, img/tmp/search-result.webp 1x")
+                                        source(type="image/jpg" srcset="img/tmp/search-result@2x.jpg 2x, img/tmp/search-result.jpg 1x")
+                                        img(src="img/tmp/search-result.jpg" alt="" width="40" height="40")
+                                    .search__item-content
+                                        a.search__item-title(href="product.html") Складной нож Стерх
+                                        .search__item-price
+                                            span 1 600 ₽
+
+                                svg.search__item-arrow(width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    use(xlink:href="#svg-arrow")
+
+                            .search__item
+                                .search__item-col
+                                    picture.search__item-picture
+                                        source(type="image/webp" srcset="img/tmp/search-result@2x.webp 2x, img/tmp/search-result.webp 1x")
+                                        source(type="image/jpg" srcset="img/tmp/search-result@2x.jpg 2x, img/tmp/search-result.jpg 1x")
+                                        img(src="img/tmp/search-result.jpg" alt="" width="40" height="40")
+                                    .search__item-content
+                                        a.search__item-title(href="product.html") Складной нож Батнер
+                                        .search__item-price
+                                            span 1 600 ₽
+                                            span._old-price 1 870 ₽
+
+                                svg.search__item-arrow(width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    use(xlink:href="#svg-arrow")
+
+                            .search__item
+                                .search__item-col
+                                    picture.search__item-picture
+                                        source(type="image/webp" srcset="img/tmp/search-result@2x.webp 2x, img/tmp/search-result.webp 1x")
+                                        source(type="image/jpg" srcset="img/tmp/search-result@2x.jpg 2x, img/tmp/search-result.jpg 1x")
+                                        img(src="img/tmp/search-result.jpg" alt="" width="40" height="40")
+                                    .search__item-content
+                                        a.search__item-title(href="product.html") Складной нож Shark
+                                        .search__item-price
+                                            span 1 600 ₽
+
+                                svg.search__item-arrow(width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    use(xlink:href="#svg-arrow")
+
+                            .search__item
+                                .search__item-col
+                                    picture.search__item-picture
+                                        source(type="image/webp" srcset="img/tmp/search-result@2x.webp 2x, img/tmp/search-result.webp 1x")
+                                        source(type="image/jpg" srcset="img/tmp/search-result@2x.jpg 2x, img/tmp/search-result.jpg 1x")
+                                        img(src="img/tmp/search-result.jpg" alt="" width="40" height="40")
+                                    .search__item-content
+                                        a.search__item-title(href="product.html") Складной нож Спаут
+                                        .search__item-price
+                                            span 1 600 ₽
+                                            span._old-price 1 870 ₽
+
+                                svg.search__item-arrow(width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    use(xlink:href="#svg-arrow")
+
+                            .search__item
+                                .search__item-col
+                                    picture.search__item-picture
+                                        source(type="image/webp" srcset="img/tmp/search-result@2x.webp 2x, img/tmp/search-result.webp 1x")
+                                        source(type="image/jpg" srcset="img/tmp/search-result@2x.jpg 2x, img/tmp/search-result.jpg 1x")
+                                        img(src="img/tmp/search-result.jpg" alt="" width="40" height="40")
+                                    .search__item-content
+                                        a.search__item-title(href="product.html") Складной нож Стерх
+                                        .search__item-price
+                                            span 1 600 ₽
+
+                                svg.search__item-arrow(width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    use(xlink:href="#svg-arrow")
+
+                            .search__item
+                                .search__item-col
+                                    picture.search__item-picture
+                                        source(type="image/webp" srcset="img/tmp/search-result@2x.webp 2x, img/tmp/search-result.webp 1x")
+                                        source(type="image/jpg" srcset="img/tmp/search-result@2x.jpg 2x, img/tmp/search-result.jpg 1x")
+                                        img(src="img/tmp/search-result.jpg" alt="" width="40" height="40")
+                                    .search__item-content
+                                        a.search__item-title(href="product.html") Складной нож Батнер
+                                        .search__item-price
+                                            span 1 600 ₽
+                                            span._old-price 1 870 ₽
+
+                                svg.search__item-arrow(width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    use(xlink:href="#svg-arrow")
+
+                            .search__item
+                                .search__item-col
+                                    picture.search__item-picture
+                                        source(type="image/webp" srcset="img/tmp/search-result@2x.webp 2x, img/tmp/search-result.webp 1x")
+                                        source(type="image/jpg" srcset="img/tmp/search-result@2x.jpg 2x, img/tmp/search-result.jpg 1x")
+                                        img(src="img/tmp/search-result.jpg" alt="" width="40" height="40")
+                                    .search__item-content
+                                        a.search__item-title(href="product.html") Складной нож Shark
+                                        .search__item-price
+                                            span 1 600 ₽
+
+                                svg.search__item-arrow(width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    use(xlink:href="#svg-arrow")
+
+                            .search__item
+                                .search__item-col
+                                    picture.search__item-picture
+                                        source(type="image/webp" srcset="img/tmp/search-result@2x.webp 2x, img/tmp/search-result.webp 1x")
+                                        source(type="image/jpg" srcset="img/tmp/search-result@2x.jpg 2x, img/tmp/search-result.jpg 1x")
+                                        img(src="img/tmp/search-result.jpg" alt="" width="40" height="40")
+                                    .search__item-content
+                                        a.search__item-title(href="product.html") Складной нож Спаут
+                                        .search__item-price
+                                            span 1 600 ₽
+                                            span._old-price 1 870 ₽
+
+                                svg.search__item-arrow(width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    use(xlink:href="#svg-arrow")
+
+                        //.search__category
+                            .search__category-col
+                                picture.search__category-picture
+                                    source(type="image/webp" srcset="img/tmp/search-category@2x.webp 2x, img/tmp/search-category.webp 1x")
+                                    source(type="image/jpg" srcset="img/tmp/search-category@2x.jpg 2x, img/tmp/search-category.jpg 1x")
+                                    img(src="img/tmp/search-category.jpg" alt="" width="70" height="32")
+
+                                .search__category-content
+                                    .search__category-subtitle категория
+                                    a.search__category-title(href="catalog.html") Складной нож
+
+                            svg.search__category-arrow(width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                use(xlink:href="#svg-arrow")
+
+
+                    .search__results-temp
+                        .search__block
+                            .search__block-title-block Вы недавно искали
+                                button.search__block-clear Очистить
+
+                            .search__block-items
+                                .search__block-item
+                                    button.search__block-title(type="button" data-value="Складные")
+                                        svg(width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            use(xlink:href="#svg-search")
+                                        | Складные
+                                    button.search__block-remove(type="button")
+
+                                .search__block-item
+                                    button.search__block-title(type="button" data-value="Нож рыбак")
+                                        svg(width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            use(xlink:href="#svg-search")
+                                        | Нож рыбак
+                                    button.search__block-remove(type="button")
+
+                                .search__block-item
+                                    button.search__block-title(type="button" data-value="Нож")
+                                        svg(width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            use(xlink:href="#svg-search")
+                                        | Нож
+                                    button.search__block-remove(type="button")
+
+                        .search__block
+                            .search__block-title-block Часто ищут
+
+                            .search__block-items
+                                .search__block-item
+                                    button.search__block-title(type="button" data-value="Складные")
+                                        svg(width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            use(xlink:href="#svg-search")
+                                        | Складные
+                                    .search__block-description Категория
+
+                                .search__block-item
+                                    button.search__block-title(type="button" data-value="Нож ООО ПП Кизляр")
+                                        svg(width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            use(xlink:href="#svg-search")
+                                        | Нож ООО ПП Кизляр
+                                    .search__block-description Бренд
+
+                                .search__block-item
+                                    button.search__block-title(type="button" data-value="Ножи от 1 000 - 2 000 ₽")
+                                        svg(width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            use(xlink:href="#svg-search")
+                                        | Ножи от 1 000 - 2 000 ₽
+                                    .search__block-description По цене
+
+                                .search__block-item
+                                    button.search__block-title(type="button" data-value="Топ - 10 складных")
+                                        svg(width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            use(xlink:href="#svg-search")
+                                        | Топ - 10 складных
+                                    .search__block-description Подборка
+
+                                .search__block-item
+                                    button.search__block-title(type="button" data-value="Нож рыбак - 2")
+                                        svg(width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            use(xlink:href="#svg-search")
+                                        | Нож рыбак - 2
+                                    .search__block-description Товар
+
+            .header__controls
+                .header__control.header__profile
+                    button.header__control(type="button" data-src="#modal-auth" data-fancybox class =profileClass)
+                        svg(width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            use(xlink:href="#svg-profile")
+                        | Профиль
+                    .header__profile-list
+                        ul
+                            li
+                                a(href="profile.html") Мои данные
+                            li
+                                a(href="orders.html") Заказы
+                            li
+                                a(href="bonuses.html") Бонусы
+                            li
+                                a(href="index.html") Выход
+
+                button.header__control.header__mobile-catalog(type="button")
+                    svg(width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                        use(xlink:href="#svg-mobile-catalog")
+                    span Каталог
+
+                a.header__control(href="compare.html" class =compareClass)
+                    svg(width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg")
+                        use(xlink:href="#svg-compare")
+                    | Сравнение
+
+                a.header__control(href="favourite.html" class =favouriteClass)
+                    svg(width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg")
+                        use(xlink:href="#svg-favourite")
+                    | Избранное
+
+                a.header__control.header__cart(href="cart.html" class =cartClass)
+                    .header__cart-icon
+                        svg(width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            use(xlink:href="#svg-cart")
+                        span 5
+                    | Корзина
+
+            .search__opacity._header-content
+
+    .header-catalog
+        .container
+            .header-catalog__search.search
+                form.search__form(action="search.html")
+                    .search__input
+                        input(type="text" name="search" placeholder="Искать" autocomplete="off")
+                        button.search__reset(type="reset")
+                    button.search__submit(type="submit")
+                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            use(xlink:href="#svg-search")
+
+                .search__results
+                    .search__results-result
+                        //.search__tags.swiper
+                            .swiper-wrapper
+                                .search__tags-slide.swiper-slide
+                                    a.search__tag(href="catalog.html") Топ - 10
+                                .search__tags-slide.swiper-slide
+                                    a.search__tag(href="catalog.html") Новинки
+                                .search__tags-slide.swiper-slide
+                                    a.search__tag(href="catalog.html") Хиты
+                                .search__tags-slide.swiper-slide
+                                    a.search__tag(href="catalog.html") Тактические
+                                .search__tags-slide.swiper-slide
+                                    a.search__tag(href="catalog.html") Подарочные
+                                .search__tags-slide.swiper-slide
+                                    a.search__tag(href="catalog.html") Хиты
+                                .search__tags-slide.swiper-slide
+                                    a.search__tag(href="catalog.html") Дамасская сталь
+                                .search__tags-slide.swiper-slide
+                                    a.search__tag(href="catalog.html") Топ - 10
+                                .search__tags-slide.swiper-slide
+                                    a.search__tag(href="catalog.html") Новинки
+                                .search__tags-slide.swiper-slide
+                                    a.search__tag(href="catalog.html") Хиты
+                                .search__tags-slide.swiper-slide
+                                    a.search__tag(href="catalog.html") Тактические
+                                .search__tags-slide.swiper-slide
+                                    a.search__tag(href="catalog.html") Подарочные
+                                .search__tags-slide.swiper-slide
+                                    a.search__tag(href="catalog.html") Хиты
+                                .search__tags-slide.swiper-slide
+                                    a.search__tag(href="catalog.html") Дамасская сталь
+
+                        .search__block
+                            .search__block-items
+                                .search__block-item
+                                    button.search__block-title(type="button" data-value="Складной нож")
+                                        svg(width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            use(xlink:href="#svg-search")
+                                        | Складной нож
+                                    .search__block-description Категория
+
+                                .search__block-item
+                                    button.search__block-title(type="button" data-value="Топ 10 складных")
+                                        svg(width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            use(xlink:href="#svg-search")
+                                        | Топ 10 складных
+                                    .search__block-description Подборка
+
+                                .search__block-item
+                                    button.search__block-title(type="button" data-value="Ножи Самура")
+                                        svg(width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            use(xlink:href="#svg-search")
+                                        | Ножи Самура
+                                    .search__block-description Бренд
+
+                                .search__block-item
+                                    button.search__block-title(type="button" data-value="Ножи 1 000 ₽ - 2 000 ₽")
+                                        svg(width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            use(xlink:href="#svg-search")
+                                        | Ножи 1 000 ₽ - 2 000 ₽
+                                    .search__block-description По цене
+
+                        .search__items.scroll
+                            .search__item
+                                .search__item-col
+                                    picture.search__item-picture
+                                        source(type="image/webp" srcset="img/tmp/search-result@2x.webp 2x, img/tmp/search-result.webp 1x")
+                                        source(type="image/jpg" srcset="img/tmp/search-result@2x.jpg 2x, img/tmp/search-result.jpg 1x")
+                                        img(src="img/tmp/search-result.jpg" alt="" width="40" height="40")
+                                    .search__item-content
+                                        a.search__item-title(href="product.html") Складной нож Стерх
+                                        .search__item-price
+                                            span 1 600 ₽
+
+                                svg.search__item-arrow(width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    use(xlink:href="#svg-arrow")
+
+                            .search__item
+                                .search__item-col
+                                    picture.search__item-picture
+                                        source(type="image/webp" srcset="img/tmp/search-result@2x.webp 2x, img/tmp/search-result.webp 1x")
+                                        source(type="image/jpg" srcset="img/tmp/search-result@2x.jpg 2x, img/tmp/search-result.jpg 1x")
+                                        img(src="img/tmp/search-result.jpg" alt="" width="40" height="40")
+                                    .search__item-content
+                                        a.search__item-title(href="product.html") Складной нож Батнер
+                                        .search__item-price
+                                            span 1 600 ₽
+                                            span._old-price 1 870 ₽
+
+                                svg.search__item-arrow(width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    use(xlink:href="#svg-arrow")
+
+                            .search__item
+                                .search__item-col
+                                    picture.search__item-picture
+                                        source(type="image/webp" srcset="img/tmp/search-result@2x.webp 2x, img/tmp/search-result.webp 1x")
+                                        source(type="image/jpg" srcset="img/tmp/search-result@2x.jpg 2x, img/tmp/search-result.jpg 1x")
+                                        img(src="img/tmp/search-result.jpg" alt="" width="40" height="40")
+                                    .search__item-content
+                                        a.search__item-title(href="product.html") Складной нож Shark
+                                        .search__item-price
+                                            span 1 600 ₽
+
+                                svg.search__item-arrow(width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    use(xlink:href="#svg-arrow")
+
+                            .search__item
+                                .search__item-col
+                                    picture.search__item-picture
+                                        source(type="image/webp" srcset="img/tmp/search-result@2x.webp 2x, img/tmp/search-result.webp 1x")
+                                        source(type="image/jpg" srcset="img/tmp/search-result@2x.jpg 2x, img/tmp/search-result.jpg 1x")
+                                        img(src="img/tmp/search-result.jpg" alt="" width="40" height="40")
+                                    .search__item-content
+                                        a.search__item-title(href="product.html") Складной нож Спаут
+                                        .search__item-price
+                                            span 1 600 ₽
+                                            span._old-price 1 870 ₽
+
+                                svg.search__item-arrow(width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    use(xlink:href="#svg-arrow")
+
+                            .search__item
+                                .search__item-col
+                                    picture.search__item-picture
+                                        source(type="image/webp" srcset="img/tmp/search-result@2x.webp 2x, img/tmp/search-result.webp 1x")
+                                        source(type="image/jpg" srcset="img/tmp/search-result@2x.jpg 2x, img/tmp/search-result.jpg 1x")
+                                        img(src="img/tmp/search-result.jpg" alt="" width="40" height="40")
+                                    .search__item-content
+                                        a.search__item-title(href="product.html") Складной нож Стерх
+                                        .search__item-price
+                                            span 1 600 ₽
+
+                                svg.search__item-arrow(width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    use(xlink:href="#svg-arrow")
+
+                            .search__item
+                                .search__item-col
+                                    picture.search__item-picture
+                                        source(type="image/webp" srcset="img/tmp/search-result@2x.webp 2x, img/tmp/search-result.webp 1x")
+                                        source(type="image/jpg" srcset="img/tmp/search-result@2x.jpg 2x, img/tmp/search-result.jpg 1x")
+                                        img(src="img/tmp/search-result.jpg" alt="" width="40" height="40")
+                                    .search__item-content
+                                        a.search__item-title(href="product.html") Складной нож Батнер
+                                        .search__item-price
+                                            span 1 600 ₽
+                                            span._old-price 1 870 ₽
+
+                                svg.search__item-arrow(width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    use(xlink:href="#svg-arrow")
+
+                            .search__item
+                                .search__item-col
+                                    picture.search__item-picture
+                                        source(type="image/webp" srcset="img/tmp/search-result@2x.webp 2x, img/tmp/search-result.webp 1x")
+                                        source(type="image/jpg" srcset="img/tmp/search-result@2x.jpg 2x, img/tmp/search-result.jpg 1x")
+                                        img(src="img/tmp/search-result.jpg" alt="" width="40" height="40")
+                                    .search__item-content
+                                        a.search__item-title(href="product.html") Складной нож Shark
+                                        .search__item-price
+                                            span 1 600 ₽
+
+                                svg.search__item-arrow(width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    use(xlink:href="#svg-arrow")
+
+                            .search__item
+                                .search__item-col
+                                    picture.search__item-picture
+                                        source(type="image/webp" srcset="img/tmp/search-result@2x.webp 2x, img/tmp/search-result.webp 1x")
+                                        source(type="image/jpg" srcset="img/tmp/search-result@2x.jpg 2x, img/tmp/search-result.jpg 1x")
+                                        img(src="img/tmp/search-result.jpg" alt="" width="40" height="40")
+                                    .search__item-content
+                                        a.search__item-title(href="product.html") Складной нож Спаут
+                                        .search__item-price
+                                            span 1 600 ₽
+                                            span._old-price 1 870 ₽
+
+                                svg.search__item-arrow(width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    use(xlink:href="#svg-arrow")
+
+                        //.search__category
+                            .search__category-col
+                                picture.search__category-picture
+                                    source(type="image/webp" srcset="img/tmp/search-category@2x.webp 2x, img/tmp/search-category.webp 1x")
+                                    source(type="image/jpg" srcset="img/tmp/search-category@2x.jpg 2x, img/tmp/search-category.jpg 1x")
+                                    img(src="img/tmp/search-category.jpg" alt="" width="70" height="32")
+
+                                .search__category-content
+                                    .search__category-subtitle категория
+                                    a.search__category-title(href="catalog.html") Складной нож
+
+                            svg.search__category-arrow(width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                use(xlink:href="#svg-arrow")
+
+
+                    .search__results-temp
+                        .search__block
+                            .search__block-title-block Вы недавно искали
+                                button.search__block-clear Очистить
+
+                            .search__block-items
+                                .search__block-item
+                                    button.search__block-title(type="button" data-value="Складные")
+                                        svg(width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            use(xlink:href="#svg-search")
+                                        | Складные
+                                    button.search__block-remove(type="button")
+
+                                .search__block-item
+                                    button.search__block-title(type="button" data-value="Нож рыбак")
+                                        svg(width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            use(xlink:href="#svg-search")
+                                        | Нож рыбак
+                                    button.search__block-remove(type="button")
+
+                                .search__block-item
+                                    button.search__block-title(type="button" data-value="Нож")
+                                        svg(width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            use(xlink:href="#svg-search")
+                                        | Нож
+                                    button.search__block-remove(type="button")
+
+                        .search__block
+                            .search__block-title-block Часто ищут
+
+                            .search__block-items
+                                .search__block-item
+                                    button.search__block-title(type="button" data-value="Складные")
+                                        svg(width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            use(xlink:href="#svg-search")
+                                        | Складные
+                                    .search__block-description Категория
+
+                                .search__block-item
+                                    button.search__block-title(type="button" data-value="Нож ООО ПП Кизляр")
+                                        svg(width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            use(xlink:href="#svg-search")
+                                        | Нож ООО ПП Кизляр
+                                    .search__block-description Бренд
+
+                                .search__block-item
+                                    button.search__block-title(type="button" data-value="Ножи от 1 000 - 2 000 ₽")
+                                        svg(width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            use(xlink:href="#svg-search")
+                                        | Ножи от 1 000 - 2 000 ₽
+                                    .search__block-description По цене
+
+                                .search__block-item
+                                    button.search__block-title(type="button" data-value="Топ - 10 складных")
+                                        svg(width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            use(xlink:href="#svg-search")
+                                        | Топ - 10 складных
+                                    .search__block-description Подборка
+
+                                .search__block-item
+                                    button.search__block-title(type="button" data-value="Нож рыбак - 2")
+                                        svg(width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            use(xlink:href="#svg-search")
+                                        | Нож рыбак - 2
+                                    .search__block-description Товар
+
+
+            .header-catalog__tabs.swiper
+                .swiper-wrapper
+                    .header-catalog__tab.swiper-slide
+                        button(type="button") Категории
+                    .header-catalog__tab.swiper-slide
+                        button(type="button") Подборки
+                    .header-catalog__tab.swiper-slide
+                        button(type="button") Бренды
+                    .header-catalog__tab.swiper-slide
+                        button(type="button") По цене
+
+            .header-catalog__cols.swiper
+                .swiper-wrapper
+                    .header-catalog__col.swiper-slide._categories
+                        .header-catalog__title Категории
+
+                        // Класс _active у активного li
+                        ul.header-catalog__list
+                            li
+                                a(href="catalog.html") Разделочные и туристические ножи
+                                    sup 23
+                            li
+                                a(href="catalog.html") Складные ножи
+                                    sup 54
+                            li
+                                a(href="catalog.html") Кухонные ножи и наборы
+                                    sup 32
+                            li
+                                a(href="catalog.html") Топорики
+                                    sup 12
+                            li
+                                a(href="catalog.html") Метательные ножи
+                                    sup 25
+                            li
+                                a(href="catalog.html") Авторские ножи
+                                    sup 15
+                            li
+                                a(href="catalog.html") Аксессуары
+                                    sup 123
+                            li
+                                a(href="catalog.html") Точила и инструменты
+                                    sup 5
+                            li
+                                a(href="catalog.html") Сделай нож сам
+
+                    .header-catalog__col.swiper-slide._compilations
+                        .header-catalog__title Подборки
+
+                        ul.header-catalog__tags._grey
+                            li
+                                a(href="catalog.html") Топ - 10
+                            li
+                                a(href="catalog.html") Новинки
+                            li
+                                a(href="catalog.html") Хиты
+                            li
+                                a(href="catalog.html") Тактические
+                            li
+                                a(href="catalog.html") Новинки
+                            li
+                                a(href="catalog.html") Дамасская сталь
+                            li
+                                a(href="catalog.html") Новинки
+                            li
+                                a(href="catalog.html") Хиты
+                            li
+                                a(href="catalog.html") Топ - 10
+                            li
+                                a(href="catalog.html") Хиты
+                            li
+                                a(href="catalog.html") Подарочные
+                            li
+                                a(href="catalog.html") Тактические
+                            li
+                                a(href="catalog.html") Топ - 10
+                            li
+                                a(href="catalog.html") Дамасская сталь
+                            li
+                                a(href="catalog.html") Хиты
+                            li
+                                a(href="catalog.html") Подарочные
+                            li
+                                a(href="catalog.html") Топ - 10
+                            li
+                                a(href="catalog.html") Новинки
+                            li
+                                a(href="catalog.html") Тактические
+                            li
+                                a(href="catalog.html") Подарочные
+
+                    .header-catalog__col.swiper-slide._brands
+                        .header-catalog__title Бренды
+
+                        ul.header-catalog__tags._beige
+                            li
+                                a(href="catalog.html") BergHOFF
+                            li
+                                a(href="catalog.html") Samura
+                            li
+                                a(href="catalog.html") Leatherman
+                            li
+                                a(href="catalog.html") Hultafors
+                            li
+                                a(href="catalog.html") Victorinox
+                            li
+                                a(href="catalog.html") Eden
+                            li
+                                a(href="catalog.html") Samura
+                            li
+                                a(href="catalog.html") BergHOFF
+                            li
+                                a(href="catalog.html") Hultafors
+                            li
+                                a(href="catalog.html") Leatherman
+                            li
+                                a(href="catalog.html") Eden
+                            li
+                                a(href="catalog.html") Victorinox
+
+                    .header-catalog__col.swiper-slide._price
+                        .header-catalog__title По цене
+
+                        ul.header-catalog__tags._blue
+                            li
+                                a(href="catalog.html") до 1 000 ₽
+                            li
+                                a(href="catalog.html") 1 000 ₽ - 2 000 ₽
+                            li
+                                a(href="catalog.html") 1 000 ₽ - 2 000 ₽
+                            li
+                                a(href="catalog.html") 2 000 ₽ - 5 000 ₽
+                            li
+                                a(href="catalog.html") 5 000 ₽ - 10 000 ₽
+                            li
+                                a(href="catalog.html") от 10 000 ₽
+
+.header-catalog__opacity
+
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+doctype html
+html(lang="ru")
+    head
+        - var seo = {title: 'Оплата', description: 'Оплата', keywords: 'Оплата'}
+        include includes/_meta
+    body
+        include includes/_header
+
+        main.main
+            include includes/_breadcrumbs
+
+            section.section.payment._pt0
+                .container
+                    .title-nav
+                        a.title-nav__title(href="get-order.html") Оформление заказа
+                        h1.title-nav__title._active Оплата
+                        a.title-nav__title(href="delivery.html") Доставка
+                        a.title-nav__title(href="guarantee.html") Гарантия
+
+                    .get-order__title Оформление Заказа происходит в несколько шагов
+
+                    .payment__cols
+                        .payment__col
+                            .payment__item
+                                .payment__title Банковской картой
+                                .payment__text Для выбора оплаты товара с помощью банковской карты на соответствующей странице необходимо нажать кнопку. Оплата заказа банковской картой. Оплата происходит через ПАО СБЕРБАНК с использованием банковских карт следующих платёжных систем:
+
+                        .payment__col
+                            .payment__item
+                                .payment__title Наличный расчёт
+                                .payment__text Если товар доставляется курьером, то оплата осуществляется наличными курьеру  в руки. При получении товара обязательно проверьте комплектацию товара, наличие гарантийного талона и чека.
+
+                        each val, index in ['', '', '', '']
+                            - var i = index + 1
+                            .payment__col._w25
+                                .payment__item._logo
+                                    picture
+                                        source(type="image/webp" srcset="img/tmp/payment-"+i+"@2x.webp 2x, img/tmp/payment-"+i+".webp 1x")
+                                        source(type="image/png" srcset="img/tmp/payment-"+i+"@2x.png 2x, img/tmp/payment-"+i+".png 1x")
+                                        img.payment__img(src="img/tmp/payment-"+i+".png" alt="")
+
+                    .payment__process.text
+                        .payment__process-col
+                            h2.payment__process-title Описание процесса <br>передачи данных
+
+                        .payment__process-col
+                            p Для оплаты (ввода реквизитов Вашей карты) Вы будете перенаправлены на платежный шлюз ПАО СБЕРБАНК. Соединение с платежным шлюзом и передача информации осуществляется в защищенном режиме с использованием протокола шифрования SSL. В случае если Ваш банк поддерживает технологию безопасного проведения интернет-платежей Verified By Visa или MasterCard SecureCode для проведения платежа также может потребоваться ввод специального пароля.
+                            p Настоящий сайт поддерживает 256-битное шифрование. Конфиденциальность сообщаемой персональной информации обеспечивается ПАО СБЕРБАНК. Введенная информация не будет предоставлена третьим лицам за исключением случаев, предусмотренных законодательством РФ. Проведение платежей по банковским картам осуществляется в строгом соответствии с требованиями платежных систем МИР, Visa Int. и MasterCard Europe Sprl.
+
+        include includes/_footer
+
+        include includes/_panel
+
+        include includes/_svg
+
+        include includes/_modal
+
+        include includes/_scripts

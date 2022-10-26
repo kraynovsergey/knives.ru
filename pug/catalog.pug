@@ -1,0 +1,1549 @@
+doctype html
+html(lang="ru")
+    head
+        - var seo = {title: 'Категория товаров', description: 'Описание категории товаров', keywords: 'Ключи категории товаров'}
+        include includes/_meta
+    body
+        include includes/_header
+
+        main.main
+            include includes/_breadcrumbs
+
+            section.section.catalog._pt0
+                .container.catalog__cols
+                    aside.catalog__col._aside
+                        form.filter-aside
+                            .filter-aside__block
+                                button.filter-aside__title._active(type="button") Категории
+
+                                .filter-aside__group
+                                    fieldset.filter-aside__radio
+                                        input.filter-aside__radio-input(type="radio" name="categories" id="aside-categories-1" value="Складные ножи")
+                                        label.filter-aside__radio-label(for="aside-categories-1")
+                                            span.filter-aside__radio-circle
+                                            span.filter-aside__radio-text Складные ножи
+                                                sup 34
+                                    fieldset.filter-aside__radio
+                                        input.filter-aside__radio-input(type="radio" name="categories" id="aside-categories-2" value="Разделочные ножи")
+                                        label.filter-aside__radio-label(for="aside-categories-2")
+                                            span.filter-aside__radio-circle
+                                            span.filter-aside__radio-text Разделочные ножи
+                                                sup 56
+                                    fieldset.filter-aside__radio
+                                        input.filter-aside__radio-input(type="radio" name="categories" id="aside-categories-3" value="Авторские ножи")
+                                        label.filter-aside__radio-label(for="aside-categories-3")
+                                            span.filter-aside__radio-circle
+                                            span.filter-aside__radio-text Авторские ножи
+                                                sup 14
+                                    fieldset.filter-aside__radio
+                                        input.filter-aside__radio-input(type="radio" name="categories" id="aside-categories-4" value="Точило")
+                                        label.filter-aside__radio-label(for="aside-categories-4")
+                                            span.filter-aside__radio-circle
+                                            span.filter-aside__radio-text Точило
+                                                sup 145
+                                    fieldset.filter-aside__radio
+                                        input.filter-aside__radio-input(type="radio" name="categories" id="aside-categories-5" value="Складные ножи")
+                                        label.filter-aside__radio-label(for="aside-categories-5")
+                                            span.filter-aside__radio-circle
+                                            span.filter-aside__radio-text Складные ножи
+                                                sup 34
+                                    fieldset.filter-aside__radio
+                                        input.filter-aside__radio-input(type="radio" name="categories" id="aside-categories-6" value="Разделочные ножи")
+                                        label.filter-aside__radio-label(for="aside-categories-6")
+                                            span.filter-aside__radio-circle
+                                            span.filter-aside__radio-text Разделочные ножи
+                                                sup 56
+                                    fieldset.filter-aside__radio
+                                        input.filter-aside__radio-input(type="radio" name="categories" id="aside-categories-7" value="Авторские ножи")
+                                        label.filter-aside__radio-label(for="aside-categories-7")
+                                            span.filter-aside__radio-circle
+                                            span.filter-aside__radio-text Авторские ножи
+                                                sup 14
+                                    fieldset.filter-aside__radio
+                                        input.filter-aside__radio-input(type="radio" name="categories" id="aside-categories-8" value="Точило")
+                                        label.filter-aside__radio-label(for="aside-categories-8")
+                                            span.filter-aside__radio-circle
+                                            span.filter-aside__radio-text Точило
+                                                sup 145
+
+                            .filter-aside__block
+                                button.filter-aside__title(type="button") Подборки
+
+                                ul.header-catalog__tags.filter-aside__group._row._grey
+                                    each val, index in ['Топ - 10', 'Новинки', 'Хиты', 'Подарочные', 'Тактические', 'Дамасская сталь', 'Новинки', 'Хиты']
+                                        li
+                                            a(href="catalog.html")= val
+
+                            .filter-aside__block
+                                button.filter-aside__title(type="button") Бренды
+
+                                ul.header-catalog__tags.filter-aside__group._row._beige
+                                    each val, index in ['Victorinox', 'Eden', 'Leatherman', 'Hultafors', 'BergHOFF', 'Samura']
+                                        li
+                                            a(href="catalog.html")= val
+
+                            .filter-aside__block
+                                button.filter-aside__title(type="button") По цене
+
+                                ul.header-catalog__tags.filter-aside__group._row._blue
+                                    each val, index in ['до 1 000 ₽', '1 000 ₽ - 2 000 ₽', '1 000 ₽ - 2 000 ₽', '2 000 ₽ - 5 000 ₽', '5 000 ₽ - 10 000 ₽', 'от 10 000 ₽']
+                                        li
+                                            a(href="catalog.html")= val
+
+                    .catalog__col._content
+                        h1.h1 Кухонные ножи
+                            sup 23 товара
+
+                        .filter-content
+                            form.filter-content__form
+                                .filter-content__item
+                                    button.filter-content__title.arrow-triangle._down(type="button" data-item="1") Сортировать
+
+                                    .filter-content__block.filter-content__sorting
+                                        .container
+                                            .filter-content__title-mobile Сортировать
+                                                button(type="button")
+
+                                            fieldset.filter-content__sorting-item
+                                                input(type="radio" name="sorting" value="По умолчанию" id="filter-content-sorting-1")
+                                                label(for="filter-content-sorting-1") По умолчанию
+                                            fieldset.filter-content__sorting-item
+                                                input(type="radio" name="sorting" value="По возрастанию цены" id="filter-content-sorting-2")
+                                                label(for="filter-content-sorting-2") По возрастанию цены
+                                            fieldset.filter-content__sorting-item
+                                                input(type="radio" name="sorting" value="По убыванию цены" id="filter-content-sorting-3")
+                                                label(for="filter-content-sorting-3") По убыванию цены
+                                            fieldset.filter-content__sorting-item
+                                                input(type="radio" name="sorting" value="Сначала новые товары" id="filter-content-sorting-4")
+                                                label(for="filter-content-sorting-4") Сначала новые товары
+                                            fieldset.filter-content__sorting-item
+                                                input(type="radio" name="sorting" value="Сначала старые товары" id="filter-content-sorting-5")
+                                                label(for="filter-content-sorting-5") Сначала старые товары
+
+
+                                .filter-content__item
+                                    button.filter-content__title.arrow-triangle._down(type="button" data-item="2") Рукоять
+
+                                    .filter-content__block
+                                        .container
+                                            .filter-content__title-mobile Рукоять
+                                                button(type="button")
+
+                                            .filter-content__block-scroll.scroll
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="hand" id="filter-content-hand-1" value="Дерево")
+                                                    label.filter-aside__checkbox-label(for="filter-content-hand-1") Дерево
+                                                        span.filter-aside__checkbox-remove
+
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="hand" id="filter-content-hand-2" value="Эластрон")
+                                                    label.filter-aside__checkbox-label(for="filter-content-hand-2") Эластрон
+                                                        span.filter-aside__checkbox-remove
+
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="hand" id="filter-content-hand-3" value="Пластик")
+                                                    label.filter-aside__checkbox-label(for="filter-content-hand-3") Пластик
+                                                        span.filter-aside__checkbox-remove
+
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="hand" id="filter-content-hand-4" value="Микарта")
+                                                    label.filter-aside__checkbox-label(for="filter-content-hand-4") Микарта
+                                                        span.filter-aside__checkbox-remove
+
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="hand" id="filter-content-hand-5" value="Текстолит")
+                                                    label.filter-aside__checkbox-label(for="filter-content-hand-5") Текстолит
+                                                        span.filter-aside__checkbox-remove
+
+                                            button.filter-content__submit(type="button") Применить
+                                                span.filter-content__submit-count
+                                                    span.filter-content__submit-text
+                                                    span.filter-content__submit-remove
+
+                                .filter-content__item
+                                    button.filter-content__title.arrow-triangle._down(type="button" data-item="3") Сталь
+
+                                    .filter-content__block
+                                        .container
+                                            .filter-content__title-mobile Сталь
+                                                button(type="button")
+
+                                            .filter-content__block-scroll.scroll
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="steel" id="filter-content-steel-1" value="AUS-8")
+                                                    label.filter-aside__checkbox-label(for="filter-content-steel-1") AUS-8
+                                                        span.filter-aside__checkbox-remove
+
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="steel" id="filter-content-steel-2" value="D-2")
+                                                    label.filter-aside__checkbox-label(for="filter-content-steel-2") D-2
+                                                        span.filter-aside__checkbox-remove
+
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="steel" id="filter-content-steel-3" value="Х12МФ")
+                                                    label.filter-aside__checkbox-label(for="filter-content-steel-3") Х12МФ
+                                                        span.filter-aside__checkbox-remove
+
+                                            button.filter-content__submit(type="button") Применить
+                                                span.filter-content__submit-count
+                                                    span.filter-content__submit-text
+                                                    span.filter-content__submit-remove
+
+                                .filter-content__item
+                                    button.filter-content__title.arrow-triangle._down(type="button" data-item="4") Длина клинка
+
+                                    .filter-content__block
+                                        .container
+                                            .filter-content__title-mobile Длина клинка
+                                                button(type="button")
+
+                                            .filter-content__block-scroll.scroll
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="length" id="filter-content-length-1" value="до 10 см")
+                                                    label.filter-aside__checkbox-label(for="filter-content-length-1") до 10 см
+                                                        span.filter-aside__checkbox-remove
+
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="length" id="filter-content-length-2" value="10-15 см")
+                                                    label.filter-aside__checkbox-label(for="filter-content-length-2") 10-15 см
+                                                        span.filter-aside__checkbox-remove
+
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="length" id="filter-content-length-3" value="15-20 см")
+                                                    label.filter-aside__checkbox-label(for="filter-content-length-3") 15-20 см
+                                                        span.filter-aside__checkbox-remove
+
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="length" id="filter-content-length-4" value="от 20 см")
+                                                    label.filter-aside__checkbox-label(for="filter-content-length-4") от 20 см
+                                                        span.filter-aside__checkbox-remove
+
+                                            button.filter-content__submit(type="button") Применить
+                                                span.filter-content__submit-count
+                                                    span.filter-content__submit-text
+                                                    span.filter-content__submit-remove
+
+                                .filter-content__item
+                                    button.filter-content__title.arrow-triangle._down(type="button" data-item="5") Толщина клинка
+
+                                    .filter-content__block
+                                        .container
+                                            .filter-content__title-mobile Толщина клинка
+                                                button(type="button")
+
+                                            .filter-content__block-scroll.scroll
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="thickness" id="filter-content-thickness-1" value="до 3 мм")
+                                                    label.filter-aside__checkbox-label(for="filter-content-thickness-1") до 3 мм
+                                                        span.filter-aside__checkbox-remove
+
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="thickness" id="filter-content-thickness-2" value="3-3,5 мм")
+                                                    label.filter-aside__checkbox-label(for="filter-content-thickness-2") 3-3,5 мм
+                                                        span.filter-aside__checkbox-remove
+
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="thickness" id="filter-content-thickness-3" value="3,5-4 мм")
+                                                    label.filter-aside__checkbox-label(for="filter-content-thickness-3") 3,5-4 мм
+                                                        span.filter-aside__checkbox-remove
+
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="thickness" id="filter-content-thickness-4" value="4-4,5 мм")
+                                                    label.filter-aside__checkbox-label(for="filter-content-thickness-4") 4-4,5 мм
+                                                        span.filter-aside__checkbox-remove
+
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="thickness" id="filter-content-thickness-5" value="4,5-5 мм")
+                                                    label.filter-aside__checkbox-label(for="filter-content-thickness-5") 4,5-5 мм
+                                                        span.filter-aside__checkbox-remove
+
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="thickness" id="filter-content-thickness-6" value="от 5 мм")
+                                                    label.filter-aside__checkbox-label(for="filter-content-thickness-6") от 5 мм
+                                                        span.filter-aside__checkbox-remove
+
+                                            button.filter-content__submit(type="button") Применить
+                                                span.filter-content__submit-count
+                                                    span.filter-content__submit-text
+                                                    span.filter-content__submit-remove
+
+                                .filter-content__item
+                                    button.filter-content__title.arrow-triangle._down(type="button" data-item="6") Бренд
+
+                                    .filter-content__block
+                                        .container
+                                            .filter-content__title-mobile Бренд
+                                                button(type="button")
+
+                                            .filter-content__block-scroll.scroll
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="brand" id="filter-content-brand-1" value="BergHOFF")
+                                                    label.filter-aside__checkbox-label(for="filter-content-brand-1") BergHOFF
+                                                        span.filter-aside__checkbox-remove
+
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="brand" id="filter-content-brand-2" value="Samura")
+                                                    label.filter-aside__checkbox-label(for="filter-content-brand-2") Samura
+                                                        span.filter-aside__checkbox-remove
+
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="brand" id="filter-content-brand-3" value="Leatherman")
+                                                    label.filter-aside__checkbox-label(for="filter-content-brand-3") Leatherman
+                                                        span.filter-aside__checkbox-remove
+
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="brand" id="filter-content-brand-4" value="Hultafors")
+                                                    label.filter-aside__checkbox-label(for="filter-content-brand-4") Hultafors
+                                                        span.filter-aside__checkbox-remove
+
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="brand" id="filter-content-brand-5" value="Victorinox")
+                                                    label.filter-aside__checkbox-label(for="filter-content-brand-5") Victorinox
+                                                        span.filter-aside__checkbox-remove
+
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="brand" id="filter-content-brand-6" value="Eden")
+                                                    label.filter-aside__checkbox-label(for="filter-content-brand-6") Eden
+                                                        span.filter-aside__checkbox-remove
+
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="brand" id="filter-content-brand-7" value="Samura")
+                                                    label.filter-aside__checkbox-label(for="filter-content-brand-7") Samura
+                                                        span.filter-aside__checkbox-remove
+
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="brand" id="filter-content-brand-8" value="BergHOFF")
+                                                    label.filter-aside__checkbox-label(for="filter-content-brand-8") BergHOFF
+                                                        span.filter-aside__checkbox-remove
+
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="brand" id="filter-content-brand-9" value="Hultafors")
+                                                    label.filter-aside__checkbox-label(for="filter-content-brand-9") Hultafors
+                                                        span.filter-aside__checkbox-remove
+
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="brand" id="filter-content-brand-10" value="Leatherman")
+                                                    label.filter-aside__checkbox-label(for="filter-content-brand-10") Leatherman
+                                                        span.filter-aside__checkbox-remove
+
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="brand" id="filter-content-brand-11" value="Eden")
+                                                    label.filter-aside__checkbox-label(for="filter-content-brand-11") Eden
+                                                        span.filter-aside__checkbox-remove
+
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="brand" id="filter-content-brand-12" value="Victorinox")
+                                                    label.filter-aside__checkbox-label(for="filter-content-brand-12") Victorinox
+                                                        span.filter-aside__checkbox-remove
+
+                                            button.filter-content__submit(type="button") Применить
+                                                span.filter-content__submit-count
+                                                    span.filter-content__submit-text
+                                                    span.filter-content__submit-remove
+
+                                .filter-content__item
+                                    button.filter-content__title.arrow-triangle._down(type="button" data-item="7") Цена
+
+                                    .filter-content__block._right
+                                        .container
+                                            .filter-content__title-mobile Цена
+                                                button(type="button")
+
+                                            .filter-content__block-scroll.scroll
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="price" id="filter-content-price-1" value="до 1 000 ₽")
+                                                    label.filter-aside__checkbox-label(for="filter-content-price-1") до 1 000 ₽
+                                                        span.filter-aside__checkbox-remove
+
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="price" id="filter-content-price-2" value="1 000 ₽ - 2 000 ₽")
+                                                    label.filter-aside__checkbox-label(for="filter-content-price-2") 1 000 ₽ - 2 000 ₽
+                                                        span.filter-aside__checkbox-remove
+
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="price" id="filter-content-price-3" value="1 000 ₽ - 2 000 ₽")
+                                                    label.filter-aside__checkbox-label(for="filter-content-price-3") 1 000 ₽ - 2 000 ₽
+                                                        span.filter-aside__checkbox-remove
+
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="price" id="filter-content-price-4" value="2 000 ₽ - 5 000 ₽")
+                                                    label.filter-aside__checkbox-label(for="filter-content-price-4") 2 000 ₽ - 5 000 ₽
+                                                        span.filter-aside__checkbox-remove
+
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="price" id="filter-content-price-5" value="5 000 ₽ - 10 000 ₽")
+                                                    label.filter-aside__checkbox-label(for="filter-content-price-5") 5 000 ₽ - 10 000 ₽
+                                                        span.filter-aside__checkbox-remove
+
+                                                fieldset.filter-aside__checkbox.filter-content__checkbox._grey
+                                                    input.filter-aside__checkbox-input(type="checkbox" name="price" id="filter-content-price-6" value="от 10 000 ₽")
+                                                    label.filter-aside__checkbox-label(for="filter-content-price-6") от 10 000 ₽
+                                                        span.filter-aside__checkbox-remove
+
+                                            button.filter-content__submit(type="button") Применить
+                                                span.filter-content__submit-count
+                                                    span.filter-content__submit-text
+                                                    span.filter-content__submit-remove
+
+                        .filter-selected._active
+                            button.filter-selected__item(type="button") Дерево
+                                span
+                            button.filter-selected__item(type="button") Samura
+                                span
+                            button.filter-selected__item(type="button") Дамаск
+                                span
+                            button.filter-selected__item(type="button") Дерево
+                                span
+                            button.filter-selected__item(type="button") Samura
+                                span
+                            button.filter-selected__item(type="button") Дамаск
+                                span
+                            button.filter-selected__clear._active(type="button") Очистить все
+                                span
+
+                        .catalog__products
+                            .catalog__product
+                                .product
+                                    .product__labels
+                                        .product__label._blue Новинка
+
+                                    .product__col
+                                        .product__carousel.swiper
+                                            .swiper-wrapper
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                            .product__carousel-pagination.carousel-pagination
+
+                                        a.product__title(href="product.html") Слайсер с покрытием black fuso
+
+                                    .product__col
+                                        .stars
+                                            .stars__icons
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                    .reviews-total__star-half
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                            a.stars__count(href="product.html#product-reviews") 456
+
+                                        .product__params
+                                            .product__param
+                                                span Бренд
+                                                span Samura
+                                            .product__param
+                                                span Толщина
+                                                span 3 мм
+                                            .product__param
+                                                span Длина
+                                                span 196 мм
+                                            .product__param
+                                                span Сталь
+                                                span AUS-8
+                                            .product__param
+                                                span Твердость
+                                                span 57-59 HRO
+                                            
+
+                                        .product__offer
+                                            .product__prices
+                                                .product__price 1 496 ₽
+                                                .product__price._old-price 1 870 ₽
+                                            //Класс _false для нет в наличии
+                                            .product__available._true В наличии
+
+                                        .product__controls
+                                            form.product__cart
+                                                button(type="submit")
+                                                    span._desktop Добавить в корзину
+                                                    span._mobile В корзину
+
+                                            .product__modules
+                                                //Класс _active для активной кнопки
+                                                button.product__module(type="button")
+                                                    svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-compare")
+                                                button.product__module(type="button")
+                                                    svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-favourite")
+
+                            .catalog__product
+                                .product
+                                    .product__labels
+                                        .product__label._blue Новинка
+
+                                    .product__col
+                                        .product__carousel.swiper
+                                            .swiper-wrapper
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                            .product__carousel-pagination.carousel-pagination
+
+                                        a.product__title(href="product-pre-order.html") Слайсер с покрытием black fuso
+
+                                    .product__col
+                                        .stars
+                                            .stars__icons
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                    .reviews-total__star-half
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                            a.stars__count(href="product-pre-order.html#product-reviews") 456
+
+                                        .product__params
+                                            .product__param
+                                                span Бренд
+                                                span Samura
+                                            .product__param
+                                                span Толщина
+                                                span 3 мм
+                                            .product__param
+                                                span Длина
+                                                span 196 мм
+                                            .product__param
+                                                span Сталь
+                                                span AUS-8
+                                            .product__param
+                                                span Твердость
+                                                span 57-59 HRO
+                                            
+
+                                        .product__offer
+                                            .product__prices
+                                                .product__price 1 496 ₽
+                                                .product__price._old-price 1 870 ₽
+                                            //Класс _false для нет в наличии
+                                            .product__available._false Нет в наличии
+
+                                        .product__controls
+                                            form.product__cart
+                                                button(type="button" data-src="#modal-pre-order" data-fancybox) Предзаказ
+
+                                            .product__modules
+                                                //Класс _active для активной кнопки
+                                                button.product__module(type="button")
+                                                    svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-compare")
+                                                button.product__module(type="button")
+                                                    svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-favourite")
+
+                            .catalog__product
+                                .product
+                                    .product__labels
+                                        .product__label._blue Новинка
+
+                                    .product__col
+                                        .product__carousel.swiper
+                                            .swiper-wrapper
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                            .product__carousel-pagination.carousel-pagination
+
+                                        a.product__title(href="product.html") Слайсер с покрытием black fuso
+
+                                    .product__col
+                                        .stars
+                                            .stars__icons
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                    .reviews-total__star-half
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                            a.stars__count(href="product.html#product-reviews") 456
+
+                                        .product__params
+                                            .product__param
+                                                span Бренд
+                                                span Samura
+                                            .product__param
+                                                span Толщина
+                                                span 3 мм
+                                            .product__param
+                                                span Длина
+                                                span 196 мм
+                                            .product__param
+                                                span Сталь
+                                                span AUS-8
+                                            .product__param
+                                                span Твердость
+                                                span 57-59 HRO
+                                            
+
+                                        .product__offer
+                                            .product__prices
+                                                .product__price 1 496 ₽
+                                                .product__price._old-price 1 870 ₽
+                                            //Класс _false для нет в наличии
+                                            .product__available._true В наличии
+
+                                        .product__controls
+                                            form.product__cart
+                                                button(type="submit")
+                                                    span._desktop Добавить в корзину
+                                                    span._mobile В корзину
+
+                                            .product__modules
+                                                //Класс _active для активной кнопки
+                                                button.product__module(type="button")
+                                                    svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-compare")
+                                                button.product__module(type="button")
+                                                    svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-favourite")
+
+                            .catalog__product
+                                .product
+                                    .product__labels
+                                        .product__label._blue Новинка
+
+                                    .product__col
+                                        .product__carousel.swiper
+                                            .swiper-wrapper
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                            .product__carousel-pagination.carousel-pagination
+
+                                        a.product__title(href="product.html") Слайсер с покрытием black fuso
+
+                                    .product__col
+                                        .stars
+                                            .stars__icons
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                    .reviews-total__star-half
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                            a.stars__count(href="product.html#product-reviews") 456
+
+                                        .product__params
+                                            .product__param
+                                                span Бренд
+                                                span Samura
+                                            .product__param
+                                                span Толщина
+                                                span 3 мм
+                                            .product__param
+                                                span Длина
+                                                span 196 мм
+                                            .product__param
+                                                span Сталь
+                                                span AUS-8
+                                            .product__param
+                                                span Твердость
+                                                span 57-59 HRO
+                                            
+
+                                        .product__offer
+                                            .product__prices
+                                                .product__price 1 496 ₽
+                                                .product__price._old-price 1 870 ₽
+                                            //Класс _false для нет в наличии
+                                            .product__available._true В наличии
+
+                                        .product__controls
+                                            form.product__cart
+                                                button(type="submit")
+                                                    span._desktop Добавить в корзину
+                                                    span._mobile В корзину
+
+                                            .product__modules
+                                                //Класс _active для активной кнопки
+                                                button.product__module(type="button")
+                                                    svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-compare")
+                                                button.product__module(type="button")
+                                                    svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-favourite")
+
+                            .catalog__product
+                                .product
+                                    .product__labels
+                                        .product__label._blue Новинка
+
+                                    .product__col
+                                        .product__carousel.swiper
+                                            .swiper-wrapper
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                            .product__carousel-pagination.carousel-pagination
+
+                                        a.product__title(href="product.html") Слайсер с покрытием black fuso
+
+                                    .product__col
+                                        .stars
+                                            .stars__icons
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                    .reviews-total__star-half
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                            a.stars__count(href="product.html#product-reviews") 456
+
+                                        .product__params
+                                            .product__param
+                                                span Бренд
+                                                span Samura
+                                            .product__param
+                                                span Толщина
+                                                span 3 мм
+                                            .product__param
+                                                span Длина
+                                                span 196 мм
+                                            .product__param
+                                                span Сталь
+                                                span AUS-8
+                                            .product__param
+                                                span Твердость
+                                                span 57-59 HRO
+                                            
+
+                                        .product__offer
+                                            .product__prices
+                                                .product__price 1 496 ₽
+                                                .product__price._old-price 1 870 ₽
+                                            //Класс _false для нет в наличии
+                                            .product__available._true В наличии
+
+                                        .product__controls
+                                            form.product__cart
+                                                button(type="submit")
+                                                    span._desktop Добавить в корзину
+                                                    span._mobile В корзину
+
+                                            .product__modules
+                                                //Класс _active для активной кнопки
+                                                button.product__module(type="button")
+                                                    svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-compare")
+                                                button.product__module(type="button")
+                                                    svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-favourite")
+
+                            .catalog__product
+                                .product
+                                    .product__labels
+                                        .product__label._blue Новинка
+
+                                    .product__col
+                                        .product__carousel.swiper
+                                            .swiper-wrapper
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                            .product__carousel-pagination.carousel-pagination
+
+                                        a.product__title(href="product-pre-order.html") Слайсер с покрытием black fuso
+
+                                    .product__col
+                                        .stars
+                                            .stars__icons
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                    .reviews-total__star-half
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                            a.stars__count(href="product-pre-order.html#product-reviews") 456
+
+                                        .product__params
+                                            .product__param
+                                                span Бренд
+                                                span Samura
+                                            .product__param
+                                                span Толщина
+                                                span 3 мм
+                                            .product__param
+                                                span Длина
+                                                span 196 мм
+                                            .product__param
+                                                span Сталь
+                                                span AUS-8
+                                            .product__param
+                                                span Твердость
+                                                span 57-59 HRO
+                                            
+
+                                        .product__offer
+                                            .product__prices
+                                                .product__price 1 496 ₽
+                                                .product__price._old-price 1 870 ₽
+                                            //Класс _false для нет в наличии
+                                            .product__available._false Нет в наличии
+
+                                        .product__controls
+                                            form.product__cart
+                                                button(type="button" data-src="#modal-pre-order" data-fancybox) Предзаказ
+
+                                            .product__modules
+                                                //Класс _active для активной кнопки
+                                                button.product__module(type="button")
+                                                    svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-compare")
+                                                button.product__module(type="button")
+                                                    svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-favourite")
+
+                            .catalog__product
+                                .product
+                                    .product__labels
+                                        .product__label._blue Новинка
+
+                                    .product__col
+                                        .product__carousel.swiper
+                                            .swiper-wrapper
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                            .product__carousel-pagination.carousel-pagination
+
+                                        a.product__title(href="product.html") Слайсер с покрытием black fuso
+
+                                    .product__col
+                                        .stars
+                                            .stars__icons
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                    .reviews-total__star-half
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                            a.stars__count(href="product.html#product-reviews") 456
+
+                                        .product__params
+                                            .product__param
+                                                span Бренд
+                                                span Samura
+                                            .product__param
+                                                span Толщина
+                                                span 3 мм
+                                            .product__param
+                                                span Длина
+                                                span 196 мм
+                                            .product__param
+                                                span Сталь
+                                                span AUS-8
+                                            .product__param
+                                                span Твердость
+                                                span 57-59 HRO
+                                            
+
+                                        .product__offer
+                                            .product__prices
+                                                .product__price 1 496 ₽
+                                                .product__price._old-price 1 870 ₽
+                                            //Класс _false для нет в наличии
+                                            .product__available._true В наличии
+
+                                        .product__controls
+                                            form.product__cart
+                                                button(type="submit")
+                                                    span._desktop Добавить в корзину
+                                                    span._mobile В корзину
+
+                                            .product__modules
+                                                //Класс _active для активной кнопки
+                                                button.product__module(type="button")
+                                                    svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-compare")
+                                                button.product__module(type="button")
+                                                    svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-favourite")
+
+                            .catalog__product
+                                .product
+                                    .product__labels
+                                        .product__label._blue Новинка
+
+                                    .product__col
+                                        .product__carousel.swiper
+                                            .swiper-wrapper
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                            .product__carousel-pagination.carousel-pagination
+
+                                        a.product__title(href="product.html") Слайсер с покрытием black fuso
+
+                                    .product__col
+                                        .stars
+                                            .stars__icons
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                    .reviews-total__star-half
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                            a.stars__count(href="product.html#product-reviews") 456
+
+                                        .product__params
+                                            .product__param
+                                                span Бренд
+                                                span Samura
+                                            .product__param
+                                                span Толщина
+                                                span 3 мм
+                                            .product__param
+                                                span Длина
+                                                span 196 мм
+                                            .product__param
+                                                span Сталь
+                                                span AUS-8
+                                            .product__param
+                                                span Твердость
+                                                span 57-59 HRO
+                                            
+
+                                        .product__offer
+                                            .product__prices
+                                                .product__price 1 496 ₽
+                                                .product__price._old-price 1 870 ₽
+                                            //Класс _false для нет в наличии
+                                            .product__available._true В наличии
+
+                                        .product__controls
+                                            form.product__cart
+                                                button(type="submit")
+                                                    span._desktop Добавить в корзину
+                                                    span._mobile В корзину
+
+                                            .product__modules
+                                                //Класс _active для активной кнопки
+                                                button.product__module(type="button")
+                                                    svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-compare")
+                                                button.product__module(type="button")
+                                                    svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-favourite")
+
+                            .catalog__product
+                                .product
+                                    .product__labels
+                                        .product__label._blue Новинка
+
+                                    .product__col
+                                        .product__carousel.swiper
+                                            .swiper-wrapper
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                            .product__carousel-pagination.carousel-pagination
+
+                                        a.product__title(href="product.html") Слайсер с покрытием black fuso
+
+                                    .product__col
+                                        .stars
+                                            .stars__icons
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                    .reviews-total__star-half
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                            a.stars__count(href="product.html#product-reviews") 456
+
+                                        .product__params
+                                            .product__param
+                                                span Бренд
+                                                span Samura
+                                            .product__param
+                                                span Толщина
+                                                span 3 мм
+                                            .product__param
+                                                span Длина
+                                                span 196 мм
+                                            .product__param
+                                                span Сталь
+                                                span AUS-8
+                                            .product__param
+                                                span Твердость
+                                                span 57-59 HRO
+                                            
+
+                                        .product__offer
+                                            .product__prices
+                                                .product__price 1 496 ₽
+                                                .product__price._old-price 1 870 ₽
+                                            //Класс _false для нет в наличии
+                                            .product__available._true В наличии
+
+                                        .product__controls
+                                            form.product__cart
+                                                button(type="submit")
+                                                    span._desktop Добавить в корзину
+                                                    span._mobile В корзину
+
+                                            .product__modules
+                                                //Класс _active для активной кнопки
+                                                button.product__module(type="button")
+                                                    svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-compare")
+                                                button.product__module(type="button")
+                                                    svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-favourite")
+
+                            .catalog__product
+                                .product
+                                    .product__labels
+                                        .product__label._blue Новинка
+
+                                    .product__col
+                                        .product__carousel.swiper
+                                            .swiper-wrapper
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                            .product__carousel-pagination.carousel-pagination
+
+                                        a.product__title(href="product-pre-order.html") Слайсер с покрытием black fuso
+
+                                    .product__col
+                                        .stars
+                                            .stars__icons
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                    .reviews-total__star-half
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                            a.stars__count(href="product-pre-order.html#product-reviews") 456
+
+                                        .product__params
+                                            .product__param
+                                                span Бренд
+                                                span Samura
+                                            .product__param
+                                                span Толщина
+                                                span 3 мм
+                                            .product__param
+                                                span Длина
+                                                span 196 мм
+                                            .product__param
+                                                span Сталь
+                                                span AUS-8
+                                            .product__param
+                                                span Твердость
+                                                span 57-59 HRO
+                                            
+
+                                        .product__offer
+                                            .product__prices
+                                                .product__price 1 496 ₽
+                                                .product__price._old-price 1 870 ₽
+                                            //Класс _false для нет в наличии
+                                            .product__available._false Нет в наличии
+
+                                        .product__controls
+                                            form.product__cart
+                                                button(type="button" data-src="#modal-pre-order" data-fancybox) Предзаказ
+
+                                            .product__modules
+                                                //Класс _active для активной кнопки
+                                                button.product__module(type="button")
+                                                    svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-compare")
+                                                button.product__module(type="button")
+                                                    svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-favourite")
+
+                            .catalog__product
+                                .product
+                                    .product__labels
+                                        .product__label._blue Новинка
+
+                                    .product__col
+                                        .product__carousel.swiper
+                                            .swiper-wrapper
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                            .product__carousel-pagination.carousel-pagination
+
+                                        a.product__title(href="product.html") Слайсер с покрытием black fuso
+
+                                    .product__col
+                                        .stars
+                                            .stars__icons
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                    .reviews-total__star-half
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                            a.stars__count(href="product.html#product-reviews") 456
+
+                                        .product__params
+                                            .product__param
+                                                span Бренд
+                                                span Samura
+                                            .product__param
+                                                span Толщина
+                                                span 3 мм
+                                            .product__param
+                                                span Длина
+                                                span 196 мм
+                                            .product__param
+                                                span Сталь
+                                                span AUS-8
+                                            .product__param
+                                                span Твердость
+                                                span 57-59 HRO
+                                            
+
+                                        .product__offer
+                                            .product__prices
+                                                .product__price 1 496 ₽
+                                                .product__price._old-price 1 870 ₽
+                                            //Класс _false для нет в наличии
+                                            .product__available._true В наличии
+
+                                        .product__controls
+                                            form.product__cart
+                                                button(type="submit")
+                                                    span._desktop Добавить в корзину
+                                                    span._mobile В корзину
+
+                                            .product__modules
+                                                //Класс _active для активной кнопки
+                                                button.product__module(type="button")
+                                                    svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-compare")
+                                                button.product__module(type="button")
+                                                    svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-favourite")
+
+                            .catalog__product
+                                .product
+                                    .product__labels
+                                        .product__label._blue Новинка
+
+                                    .product__col
+                                        .product__carousel.swiper
+                                            .swiper-wrapper
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                                a.product__carousel-slide.swiper-slide(href="product.html")
+                                                    picture.product__picture
+                                                        source(type="image/webp" srcset="img/tmp/product-catalog-1@2x.webp 2x, img/tmp/product-catalog-1.webp 1x")
+                                                        source(type="image/jpeg" srcset="img/tmp/product-catalog-1@2x.jpg 2x, img/tmp/product-catalog-1.jpg 1x")
+                                                        img(src="img/tmp/product-catalog-1.jpg" alt="" width="292" height="292")
+                                            .product__carousel-pagination.carousel-pagination
+
+                                        a.product__title(href="product.html") Слайсер с покрытием black fuso
+
+                                    .product__col
+                                        .stars
+                                            .stars__icons
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star._active
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                .reviews-total__star
+                                                    svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-star")
+                                                    .reviews-total__star-half
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                            a.stars__count(href="product.html#product-reviews") 456
+
+                                        .product__params
+                                            .product__param
+                                                span Бренд
+                                                span Samura
+                                            .product__param
+                                                span Толщина
+                                                span 3 мм
+                                            .product__param
+                                                span Длина
+                                                span 196 мм
+                                            .product__param
+                                                span Сталь
+                                                span AUS-8
+                                            .product__param
+                                                span Твердость
+                                                span 57-59 HRO
+                                            
+
+                                        .product__offer
+                                            .product__prices
+                                                .product__price 1 496 ₽
+                                                .product__price._old-price 1 870 ₽
+                                            //Класс _false для нет в наличии
+                                            .product__available._true В наличии
+
+                                        .product__controls
+                                            form.product__cart
+                                                button(type="submit")
+                                                    span._desktop Добавить в корзину
+                                                    span._mobile В корзину
+
+                                            .product__modules
+                                                //Класс _active для активной кнопки
+                                                button.product__module(type="button")
+                                                    svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-compare")
+                                                button.product__module(type="button")
+                                                    svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                        use(xlink:href="#svg-favourite")
+
+                        include includes/_pagination
+
+        include includes/_footer
+
+        include includes/_panel
+
+        include includes/_svg
+
+        include includes/_modal
+
+        include includes/_scripts

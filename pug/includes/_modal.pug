@@ -1,0 +1,168 @@
+.modal(id="modal-choose-city")
+    .modal__title-wrapper
+        .modal__title Выберите город
+        button.modal__close(type="button" data-fancybox-close)
+
+    form.form
+        fieldset.form__fieldset
+            input.form__input(type="text" name="city" id="choose-city" placeholder="Ваш город")
+            label.form__label(for="choose-city") Ваш город
+            button.form__clear(type="button")
+
+        .form__bmt.form__radios
+            fieldset.filter-aside__radio.form__radio
+                input.filter-aside__radio-input(type="radio" name="categories" id="choose-city-1" value="Владимир" checked)
+                label.filter-aside__radio-label(for="choose-city-1")
+                    span.filter-aside__radio-circle
+                    span.filter-aside__radio-text Владимир
+
+            fieldset.filter-aside__radio.form__radio
+                input.filter-aside__radio-input(type="radio" name="categories" id="choose-city-2" value="Москва")
+                label.filter-aside__radio-label(for="choose-city-2")
+                    span.filter-aside__radio-circle
+                    span.filter-aside__radio-text Москва
+
+            fieldset.filter-aside__radio.form__radio
+                input.filter-aside__radio-input(type="radio" name="categories" id="choose-city-3" value="Санкт-Петербург")
+                label.filter-aside__radio-label(for="choose-city-3")
+                    span.filter-aside__radio-circle
+                    span.filter-aside__radio-text Санкт-Петербург
+
+            fieldset.filter-aside__radio.form__radio
+                input.filter-aside__radio-input(type="radio" name="categories" id="choose-city-4" value="Екатеринбург")
+                label.filter-aside__radio-label(for="choose-city-4")
+                    span.filter-aside__radio-circle
+                    span.filter-aside__radio-text Екатеринбург
+
+            fieldset.filter-aside__radio.form__radio
+                input.filter-aside__radio-input(type="radio" name="categories" id="choose-city-5" value="Нижний Новгород")
+                label.filter-aside__radio-label(for="choose-city-5")
+                    span.filter-aside__radio-circle
+                    span.filter-aside__radio-text Нижний Новгород
+
+            fieldset.filter-aside__radio.form__radio
+                input.filter-aside__radio-input(type="radio" name="categories" id="choose-city-6" value="Пермь")
+                label.filter-aside__radio-label(for="choose-city-6")
+                    span.filter-aside__radio-circle
+                    span.filter-aside__radio-text Пермь
+
+            fieldset.filter-aside__radio.form__radio
+                input.filter-aside__radio-input(type="radio" name="categories" id="choose-city-7" value="Новосибирск")
+                label.filter-aside__radio-label(for="choose-city-7")
+                    span.filter-aside__radio-circle
+                    span.filter-aside__radio-text Новосибирск
+
+            fieldset.filter-aside__radio.form__radio
+                input.filter-aside__radio-input(type="radio" name="categories" id="choose-city-8" value="Казань")
+                label.filter-aside__radio-label(for="choose-city-8")
+                    span.filter-aside__radio-circle
+                    span.filter-aside__radio-text Казань
+
+            fieldset.filter-aside__radio.form__radio
+                input.filter-aside__radio-input(type="radio" name="categories" id="choose-city-9" value="Челябинск")
+                label.filter-aside__radio-label(for="choose-city-9")
+                    span.filter-aside__radio-circle
+                    span.filter-aside__radio-text Челябинск
+
+.modal._auth(id="modal-auth")
+    .modal__title-wrapper
+        .modal__title Войдите или зарегистрируйтесь
+        button.modal__close(type="button" data-fancybox-close)
+
+    form.form
+        fieldset.form__fieldset
+            input.form__input(type="tel" name="phone" id="auth-phone" placeholder="Ваш телефон")
+            label.form__label(for="auth-phone") Ваш телефон
+            button.form__clear(type="button")
+
+        .form__submit
+            button(type="button") Далее
+
+.modal._auth(id="modal-auth-confirm")
+    .modal__title-wrapper
+        .modal__title +7 800 555 35 35
+        button.modal__close(type="button" data-fancybox-close)
+
+    form.form
+        .form__auth Вход в аккаунт
+
+        fieldset.form__fieldset
+            input.form__input(type="text" name="sms_code" id="auth-sms-code" placeholder="Код из СМС")
+            label.form__label(for="auth-sms-code") Код из СМС
+            button.form__clear(type="button")
+
+        .form__submit
+            button(type="submit") Далее
+
+        .form__timer следующий код 55 сек
+
+.modal._auth(id="modal-question")
+    .modal__title-wrapper
+        .modal__title Задать вопрос
+        button.modal__close(type="button" data-fancybox-close)
+
+    form.form
+        fieldset.form__fieldset
+            input.form__input(type="text" name="name" id="question-name" placeholder="Ваше имя")
+            label.form__label(for="question-name") Ваше имя
+            button.form__clear(type="button")
+
+        fieldset.form__fieldset
+            input.form__input(type="tel" name="phone" id="question-phone" placeholder="Ваш телефон")
+            label.form__label(for="question-phone") Ваш телефон
+            button.form__clear(type="button")
+
+        fieldset.form__fieldset
+            input.form__input(type="email" name="email" id="question-email" placeholder="Ваш email")
+            label.form__label(for="question-email") Ваш email
+            button.form__clear(type="button")
+
+        fieldset.form__fieldset
+            textarea.form__textarea(name="message" id="question-message" placeholder="Ваш вопрос")
+            label.form__label(for="question-message") Ваш вопрос
+
+        .form__submit
+            button(type="submit") Отправить
+
+.modal(id="modal-pre-order")
+    .modal__title-wrapper
+        .modal__title Предзаказ
+        button.modal__close(type="button" data-fancybox-close)
+
+    form.form
+        .form__product
+            picture.form__product-picture
+                source(type="image/webp" srcset="img/tmp/product-thumb-1@2x.webp 2x, img/tmp/product-thumb-1.webp 1x")
+                source(type="image/jpeg" srcset="img/tmp/product-thumb-1@2x.jpg 2x, img/tmp/product-thumb-1.jpg 1x")
+                img(src="img/tmp/product-thumb-1.jpg" alt="" width="90" height="90")
+
+            .form__product-content
+                .form__product-title Слайсер с покрытием black fuso
+                .form__product-price 500 000 ₽
+
+        fieldset.form__fieldset
+            input.form__input(type="text" name="firstname" id="pre-order-firstname" placeholder="Ваше имя")
+            label.form__label(for="pre-order-firstname") Ваше имя
+            button.form__clear(type="button")
+
+        fieldset.form__fieldset
+            input.form__input(type="text" name="lastname" id="pre-order-lastname" placeholder="Ваша фамилия")
+            label.form__label(for="pre-order-lastname") Ваша фамилия
+            button.form__clear(type="button")
+
+        fieldset.form__fieldset
+            input.form__input(type="tel" name="phone" id="pre-order-phone" placeholder="Ваш телефон")
+            label.form__label(for="pre-order-phone") Ваш телефон
+            button.form__clear(type="button")
+
+        fieldset.form__fieldset
+            input.form__input(type="email" name="email" id="pre-order-email" placeholder="Ваш e-mail")
+            label.form__label(for="pre-order-email") Ваш e-mail
+            button.form__clear(type="button")
+
+        fieldset.form__fieldset
+            textarea.form__textarea(name="message" id="pre-order-message" placeholder="Комментарий к заказу")
+            label.form__label(for="pre-order-message") Комментарий к заказу
+
+        .form__submit
+            button(type="submit") Сделать предзаказ

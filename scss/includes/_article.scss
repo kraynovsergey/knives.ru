@@ -1,0 +1,157 @@
+.article {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+
+	&:hover {
+		& .article__opacity {
+			opacity: 0;
+		}
+
+		& .article__play {
+			background: rgba(255, 255, 255, 0.3);
+		}
+	}
+
+	&__picture {
+		margin-bottom: 25px;
+
+		@media (max-width: 991px) {
+			margin-bottom: 20px;
+		}
+
+		& img {
+			width: 100%;
+			height: auto;
+			border-radius: 30px;
+
+			@media (max-width: 991px) {
+				border-radius: 15px;
+			}
+		}
+	}
+
+	&__date {
+		margin-bottom: 15px;
+		font-size: .75rem;
+		color: $color_black_opacity;
+		font-weight: 600;
+
+		@media (max-width: 991px) {
+			margin-bottom: 10px;
+			font-size: .77rem;
+		}
+	}
+
+	&__title {
+		color: inherit;
+		text-decoration: none;
+		line-height: 120%;
+
+		&:hover {
+			color: $color_blue;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+		}
+	}
+
+	&__all {
+		height: 264px;
+		background: $color_grey;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 30px;
+		position: relative;
+
+		@media (max-width: 991px) {
+			height: 184px;
+			border-radius: 15px;
+		}
+
+		& a {
+			display: flex;
+			align-items: center;
+			font-size: .75rem;
+			font-weight: 600;
+			color: inherit;
+			text-decoration: none;
+
+			& span {
+				margin-left: 20px;
+				position: relative;
+				top: unset;
+				right: unset !important;
+				box-shadow: none !important;
+			}
+
+			&:hover {
+				color: $color_blue;
+			}
+
+			&::after {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+			}
+		}
+	}
+
+	&__video {
+		position: relative;
+		margin-bottom: 25px;
+
+		@media (max-width: 991px) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__opacity {
+		transition: $transition;
+		background: $color_black_opacity;
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		border-radius: 30px;
+
+		@media (max-width: 991px) {
+			border-radius: 15px;
+		}
+	}
+
+	&__play {
+		width: 90px;
+		height: 90px;
+		border-radius: 50%;
+		border: 2px solid rgba(255, 255, 255, 0.3);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		left: calc(50% - 45px);
+		top: calc(50% - 45px);
+		transition: $transition;
+
+		&::after {
+			content: '';
+			width: 0;
+			height: 0;
+			border-top: 15px solid transparent;
+			border-left: 15px solid $color_white;
+			border-bottom: 15px solid transparent;
+			border-radius: 5px;
+		}
+	}
+}

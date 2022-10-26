@@ -1,0 +1,21 @@
+.articles {
+	&__cols {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -7.5px -30px;
+	}
+
+	&__col {
+		padding: 0 7.5px;
+		margin-bottom: 30px;
+		width: 33.33%;
+
+		@media (max-width: 991px) {
+			width: 50%;
+		}
+
+		@media (max-width: 575px) {
+			width: 100%;
+		}
+	}
+}

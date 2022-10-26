@@ -1,0 +1,147 @@
+.filter-selected {
+	display: none;
+	align-items: center;
+	margin-bottom: 10px;
+	flex-wrap: wrap;
+
+	@media (max-width: 991px) {
+		overflow-x: auto;
+		flex-wrap: nowrap;
+		margin-bottom: 15px;
+
+		&::-webkit-scrollbar {
+			width: 0;
+			height: 0;
+		}
+	}
+
+	@media (max-width: 575px) {
+		margin-right: -20px;
+	}
+
+	&._active {
+		display: flex;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		margin-right: 15px;
+		font-size: .5rem;
+		font-weight: 500;
+		white-space: nowrap;
+		margin-bottom: 5px;
+
+		@media (max-width: 991px) {
+			font-size: .66rem;
+			margin-bottom: 0;
+		}
+
+		&:hover {
+			@media (min-width: 992px) {
+				color: $color_blue;
+
+				& span {
+					background: $color_blue;
+					border-color: $color_blue;
+
+					&::before,
+					&::after {
+						background: $color_white;
+					}
+				}
+			}
+		}
+
+		& span {
+			min-width: 14px;
+			max-width: 14px;
+			height: 14px;
+			border-radius: 50%;
+			background: $color_white;
+			border: 1px solid $color_grey;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			margin-left: 5px;
+			transition: $transition;
+
+			&::before,
+			&::after {
+				content: '';
+				width: 1px;
+				height: 6px;
+				background: $color_black;
+				position: absolute;
+			}
+
+			&::before {
+				transform: rotate(45deg);
+			}
+
+			&::after {
+				transform: rotate(-45deg);
+			}
+		}
+	}
+
+	&__clear {
+		height: 34px;
+		border-radius: 10px;
+		background: $color_white;
+		border: 1px solid $color_grey;
+		padding: 0 12px;
+		font-size: .5rem;
+		font-weight: 500;
+		display: none;
+		align-items: center;
+		white-space: nowrap;
+		margin-bottom: 5px;
+
+		@media (max-width: 991px) {
+			font-size: .66rem;
+			margin-bottom: 0;
+		}
+
+		&:hover {
+			@media (min-width: 992px) {
+				background: $color_grey;
+			}
+		}
+
+		&._active {
+			display: flex;
+		}
+
+		& span {
+			min-width: 14px;
+			max-width: 14px;
+			height: 14px;
+			border-radius: 50%;
+			background: $color_blue;
+			position: relative;
+			margin-left: 10px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			&::before,
+			&::after {
+				content: '';
+				width: 1px;
+				height: 6px;
+				background: $color_white;
+				position: absolute;
+			}
+
+			&::before {
+				transform: rotate(45deg);
+			}
+
+			&::after {
+				transform: rotate(-45deg);
+			}
+		}
+	}
+}

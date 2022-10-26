@@ -1,0 +1,86 @@
+doctype html
+html(lang="ru")
+    head
+        - var seo = {title: 'Мои данные', description: 'Описание моих данных', keywords: 'Ключи моих данных'}
+        include includes/_meta
+    body
+        - var profileClass = '_active'
+        include includes/_header
+
+        main.main
+            .breadcrumbs
+                .container
+                    .breadcrumbs__list-wrapper._profile
+                        a.breadcrumbs__mobile(href="index.html")
+                            svg(width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                use(xlink:href="#svg-arrow")
+                            | Главная
+
+                        a.compare__clear.breadcrumbs__exit(href="index.html") Выход
+                            span.compare__clear-circle
+
+            section.section._pt0
+                .container
+                    .cabinet-nav
+                        ul.cabinet-nav__list
+                            li._active
+                                a(href="profile.html") Мои данные
+                            li
+                                a(href="orders.html") Заказы
+                            li
+                                a(href="bonuses.html") Бонусы
+
+                        a.compare__clear.cabinet-nav__exit(href="index.html") Выход
+                            span.compare__clear-circle
+
+                    form.form.profile
+                        .form__cols
+                            .form__col
+                                fieldset.form__fieldset
+                                    input.form__input(type="text" name="firstname" id="profile-firstname" placeholder="Ваше имя" value="Иван")
+                                    label.form__label(for="profile-firstname") Ваше имя
+                                    button.form__clear(type="button")
+
+                            .form__col
+                                fieldset.form__fieldset
+                                    input.form__input(type="text" name="firstname" id="profile-lastname" placeholder="Ваша фамилия" value="Иванов")
+                                    label.form__label(for="profile-lastname") Ваша фамилия
+                                    button.form__clear(type="button")
+
+                            .form__col
+                                fieldset.form__fieldset
+                                    input.form__input(type="tel" name="phone" id="profile-phone" placeholder="Ваш телефон" value="+7 (999) 999-99-99")
+                                    label.form__label(for="profile-phone") Ваш телефон
+                                    button.form__clear(type="button")
+
+                            .form__col
+                                fieldset.form__fieldset
+                                    input.form__input(type="email" name="email" id="profile-email" placeholder="Ваш e-mail" value="mail@site.ru")
+                                    label.form__label(for="profile-email") Ваш e-mail
+                                    button.form__clear(type="button")
+
+                            .form__col
+                                fieldset.form__fieldset
+                                    input.form__input(type="date" name="birthday" id="profile-birthday" placeholder="Дата рождения" value="1999-12-12")
+                                    label.form__label(for="profile-birthday") Дата рождения
+
+                            .form__col
+                                .cart__form-policy
+                                    input(type="checkbox" name="subscribe" id="profile-subscribe" checked)
+                                    label(for="profile-subscribe")
+                                        span.cart__form-policy-check
+                                        strong Хочу знать о новинках, скидках и акциях
+
+                        .form__submit
+                            button(type="submit")._grey Изменить
+
+        include includes/_footer
+
+        - var panelProfileClass = '_active';
+        include includes/_panel
+
+        include includes/_svg
+
+        include includes/_modal
+
+        include includes/_scripts

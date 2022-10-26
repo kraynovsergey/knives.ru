@@ -1,0 +1,32 @@
+doctype html
+html(lang="ru")
+    head
+        - var seo = {title: 'Корзина', description: 'Корзина', keywords: 'Корзина'}
+        include includes/_meta
+    body
+        - var cartClass = '_active'
+        include includes/_header
+
+        main.main
+            include includes/_breadcrumbs
+
+            section.section.empty._pt0
+                .container
+                    .empty__cols
+                        .empty__col
+                            h1.h1 Корзина
+
+                        .empty__col
+                            .empty__text На данный момент Вы не добавили ни одного товара в корзину
+                            a.empty__link(href="categories.html") Перейти в каталог
+
+        include includes/_footer
+
+        - var panelCartClass = '_active';
+        include includes/_panel
+
+        include includes/_svg
+
+        include includes/_modal
+
+        include includes/_scripts

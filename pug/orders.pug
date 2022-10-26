@@ -1,0 +1,358 @@
+doctype html
+html(lang="ru")
+    head
+        - var seo = {title: 'Заказы', description: 'Описание заказов', keywords: 'Ключи заказов'}
+        include includes/_meta
+    body
+        - var profileClass = '_active'
+        include includes/_header
+
+        main.main
+            .breadcrumbs
+                .container
+                    .breadcrumbs__list-wrapper._profile
+                        a.breadcrumbs__mobile(href="index.html")
+                            svg(width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                use(xlink:href="#svg-arrow")
+                            | Главная
+
+                        a.compare__clear.breadcrumbs__exit(href="index.html") Выход
+                            span.compare__clear-circle
+
+            section.section._pt0
+                .container
+                    .cabinet-nav
+                        ul.cabinet-nav__list
+                            li
+                                a(href="profile.html") Мои данные
+                            li._active
+                                a(href="orders.html") Заказы
+                            li
+                                a(href="bonuses.html") Бонусы
+
+                        a.compare__clear.cabinet-nav__exit(href="index.html") Выход
+                            span.compare__clear-circle
+
+                    .order
+                        .order__btn
+                            .order__title.arrow-triangle._right Заказ № 917
+                                span от 3 февраля 2021
+                            .order__info
+                                .order__count.order__info-item 1 товар
+                                .order__price.order__info-item 5 000 <span>₽</span>
+                                .order__status.order__info-item._grey Новый
+
+                        .order__details
+                            .order__details-col
+                                .order-product
+                                    a.order-product__img(href="product.html")
+                                        picture
+                                            source(type="image/webp" srcset="img/tmp/orders@2x.webp 2x, img/tmp/orders.webp 1x")
+                                            source(type="image/jpeg" srcset="img/tmp/orders@2x.jpg 2x, img/tmp/orders.jpg 1x")
+                                            img(src="img/tmp/orders.jpg" alt="" width="87" height="87")
+                                    .order-product__content
+                                        a.order-product__title(href="product.html") Слайсер с покрытием black fuso
+                                        .order-product__params
+                                            .order-product__param 1 шт.
+                                            .order-product__param 500 000 <span>₽</span>
+
+                                .order-product
+                                    a.order-product__img(href="product.html")
+                                        picture
+                                            source(type="image/webp" srcset="img/tmp/orders@2x.webp 2x, img/tmp/orders.webp 1x")
+                                            source(type="image/jpeg" srcset="img/tmp/orders@2x.jpg 2x, img/tmp/orders.jpg 1x")
+                                            img(src="img/tmp/orders.jpg" alt="" width="87" height="87")
+                                    .order-product__content
+                                        a.order-product__title(href="product.html") Слайсер с покрытием black fuso
+                                        .order-product__params
+                                            .order-product__param 1 шт.
+                                            .order-product__param 500 000 <span>₽</span>
+
+                            .order__details-col
+                                .order__params
+                                    .order__param
+                                        .order-param
+                                            .order-param__title.order-param__col Способы доставки:
+                                            .order-param__value.order-param__col СДЭК (Самовывоз)
+
+                                        .order-param
+                                            .order-param__title.order-param__col Пункт выдачи:
+                                            .order-param__value.order-param__col улица Карла Маркса, 3
+
+                                        .order-param
+                                            .order-param__title.order-param__col Способ оплаты:
+                                            .order-param__value.order-param__col Онлайн оплата
+
+                                        .order-param
+                                            .order-param__title.order-param__col Оплачен:
+                                            .order-param__value.order-param__col Нет (оплатить)
+
+                                    .order__param
+                                        .order-param
+                                            .order-param__title.order-param__col Товаров на:
+                                            .order-param__value.order-param__col 150 000 ₽
+
+                                        .order-param
+                                            .order-param__title.order-param__col Бонусы:
+                                            .order-param__value.order-param__col._blue +3 000 ₽
+
+                                        .order-param
+                                            .order-param__title.order-param__col Скидка:
+                                            .order-param__value.order-param__col._red -12 000 ₽
+
+                                        .order-param
+                                            .order-param__title.order-param__col Доставка:
+                                            .order-param__value.order-param__col._lots
+                                                .order-param__value-lot._line 1 500 ₽
+                                                .order-param__value-lot 0 ₽
+
+                                        .order-param
+                                            .order-param__title.order-param__col Итого:
+                                            .order-param__value.order-param__col 138 000 ₽
+
+                                .order__cancel
+                                    button(type="button")
+                                        svg(width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            use(xlink:href="#svg-cancel")
+                                        | Отменить заказ
+
+                    .order
+                        .order__btn
+                            .order__title.arrow-triangle._right Заказ № 917
+                                span от 3 февраля 2021
+                            .order__info
+                                .order__count.order__info-item 1 товар
+                                .order__price.order__info-item 5 000 <span>₽</span>
+                                .order__status.order__info-item._blue Отправлен
+
+                        .order__details
+                            .order__details-col
+                                .order-product
+                                    a.order-product__img(href="product.html")
+                                        picture
+                                            source(type="image/webp" srcset="img/tmp/orders@2x.webp 2x, img/tmp/orders.webp 1x")
+                                            source(type="image/jpeg" srcset="img/tmp/orders@2x.jpg 2x, img/tmp/orders.jpg 1x")
+                                            img(src="img/tmp/orders.jpg" alt="" width="87" height="87")
+                                    .order-product__content
+                                        a.order-product__title(href="product.html") Слайсер с покрытием black fuso
+                                        .order-product__params
+                                            .order-product__param 1 шт.
+                                            .order-product__param 500 000 <span>₽</span>
+
+                                .order-product
+                                    a.order-product__img(href="product.html")
+                                        picture
+                                            source(type="image/webp" srcset="img/tmp/orders@2x.webp 2x, img/tmp/orders.webp 1x")
+                                            source(type="image/jpeg" srcset="img/tmp/orders@2x.jpg 2x, img/tmp/orders.jpg 1x")
+                                            img(src="img/tmp/orders.jpg" alt="" width="87" height="87")
+                                    .order-product__content
+                                        a.order-product__title(href="product.html") Слайсер с покрытием black fuso
+                                        .order-product__params
+                                            .order-product__param 1 шт.
+                                            .order-product__param 500 000 <span>₽</span>
+
+                                .order-product
+                                    a.order-product__img(href="product.html")
+                                        picture
+                                            source(type="image/webp" srcset="img/tmp/orders@2x.webp 2x, img/tmp/orders.webp 1x")
+                                            source(type="image/jpeg" srcset="img/tmp/orders@2x.jpg 2x, img/tmp/orders.jpg 1x")
+                                            img(src="img/tmp/orders.jpg" alt="" width="87" height="87")
+                                    .order-product__content
+                                        a.order-product__title(href="product.html") Слайсер с покрытием black fuso
+                                        .order-product__params
+                                            .order-product__param 1 шт.
+                                            .order-product__param 500 000 <span>₽</span>
+
+                            .order__details-col
+                                .order__params
+                                    .order__param
+                                        .order-param
+                                            .order-param__title.order-param__col Способы доставки:
+                                            .order-param__value.order-param__col СДЭК (Самовывоз)
+
+                                        .order-param
+                                            .order-param__title.order-param__col Пункт выдачи:
+                                            .order-param__value.order-param__col улица Карла Маркса, 3
+
+                                        .order-param
+                                            .order-param__title.order-param__col Способ оплаты:
+                                            .order-param__value.order-param__col Онлайн оплата
+
+                                        .order-param
+                                            .order-param__title.order-param__col Оплачен:
+                                            .order-param__value.order-param__col Нет (оплатить)
+
+                                    .order__param
+                                        .order-param
+                                            .order-param__title.order-param__col Товаров на:
+                                            .order-param__value.order-param__col 150 000 ₽
+
+                                        .order-param
+                                            .order-param__title.order-param__col Бонусы:
+                                            .order-param__value.order-param__col._blue +3 000 ₽
+
+                                        .order-param
+                                            .order-param__title.order-param__col Скидка:
+                                            .order-param__value.order-param__col._red -12 000 ₽
+
+                                        .order-param
+                                            .order-param__title.order-param__col Доставка:
+                                            .order-param__value.order-param__col._lots
+                                                .order-param__value-lot._line 1 500 ₽
+                                                .order-param__value-lot 0 ₽
+
+                                        .order-param
+                                            .order-param__title.order-param__col Итого:
+                                            .order-param__value.order-param__col 138 000 ₽
+
+                                .order__cancel
+                                    button(type="button")
+                                        svg(width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            use(xlink:href="#svg-search-orders")
+                                        | Отследить заказ
+
+                    .order
+                        .order__btn
+                            .order__title.arrow-triangle._right Заказ № 917
+                                span от 3 февраля 2021
+                            .order__info
+                                .order__count.order__info-item 1 товар
+                                .order__price.order__info-item 5 000 <span>₽</span>
+                                .order__status.order__info-item._green Получен
+
+                        .order__details
+                            .order__details-col
+                                .order-product
+                                    a.order-product__img(href="product.html")
+                                        picture
+                                            source(type="image/webp" srcset="img/tmp/orders@2x.webp 2x, img/tmp/orders.webp 1x")
+                                            source(type="image/jpeg" srcset="img/tmp/orders@2x.jpg 2x, img/tmp/orders.jpg 1x")
+                                            img(src="img/tmp/orders.jpg" alt="" width="87" height="87")
+                                    .order-product__content
+                                        a.order-product__title(href="product.html") Слайсер с покрытием black fuso
+                                        .order-product__params
+                                            .order-product__param 1 шт.
+                                            .order-product__param 500 000 <span>₽</span>
+
+                            .order__details-col
+                                .order__params
+                                    .order__param
+                                        .order-param
+                                            .order-param__title.order-param__col Способы доставки:
+                                            .order-param__value.order-param__col СДЭК (Самовывоз)
+
+                                        .order-param
+                                            .order-param__title.order-param__col Пункт выдачи:
+                                            .order-param__value.order-param__col улица Карла Маркса, 3
+
+                                        .order-param
+                                            .order-param__title.order-param__col Способ оплаты:
+                                            .order-param__value.order-param__col Онлайн оплата
+
+                                        .order-param
+                                            .order-param__title.order-param__col Оплачен:
+                                            .order-param__value.order-param__col Нет (оплатить)
+
+                                    .order__param
+                                        .order-param
+                                            .order-param__title.order-param__col Товаров на:
+                                            .order-param__value.order-param__col 150 000 ₽
+
+                                        .order-param
+                                            .order-param__title.order-param__col Бонусы:
+                                            .order-param__value.order-param__col._blue +3 000 ₽
+
+                                        .order-param
+                                            .order-param__title.order-param__col Скидка:
+                                            .order-param__value.order-param__col._red -12 000 ₽
+
+                                        .order-param
+                                            .order-param__title.order-param__col Доставка:
+                                            .order-param__value.order-param__col._lots
+                                                .order-param__value-lot._line 1 500 ₽
+                                                .order-param__value-lot 0 ₽
+
+                                        .order-param
+                                            .order-param__title.order-param__col Итого:
+                                            .order-param__value.order-param__col 138 000 ₽
+
+                                .order__cancel
+                                    button(type="button" data-src="#modal-order-review" data-fancybox)
+                                        svg(width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            use(xlink:href="#svg-reviews")
+                                        | Оставить отзыв
+
+        include includes/_footer
+
+        - var panelProfileClass = '_active';
+        include includes/_panel
+
+        include includes/_svg
+
+        include includes/_modal
+
+        .modal(id="modal-order-review")
+            .modal__title-wrapper
+                .modal__title Написать отзыв о товаре
+                button.modal__close(type="button" data-fancybox-close)
+
+            form.form
+
+                fieldset.form__fieldset.form__rating
+                    .form__rating-title Оценка
+                    .form__rating-items
+                        input(type="radio" name="rating" id="order-reviews-rating-5" value="1")
+                        label.reviews-total__star(for="order-reviews-rating-5")
+                            svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                use(xlink:href="#svg-star")
+
+                        input(type="radio" name="rating" id="order-reviews-rating-4" value="2")
+                        label.reviews-total__star(for="order-reviews-rating-4")
+                            svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                use(xlink:href="#svg-star")
+
+                        input(type="radio" name="rating" id="order-reviews-rating-3" value="3")
+                        label.reviews-total__star(for="order-reviews-rating-3")
+                            svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                use(xlink:href="#svg-star")
+
+                        input(type="radio" name="rating" id="order-reviews-rating-2" value="4")
+                        label.reviews-total__star(for="order-reviews-rating-2")
+                            svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                use(xlink:href="#svg-star")
+
+                        input(type="radio" name="rating" id="order-reviews-rating-1" value="5")
+                        label.reviews-total__star(for="order-reviews-rating-1")
+                            svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                use(xlink:href="#svg-star")
+
+                fieldset.form__fieldset
+                    textarea.form__textarea(name="message" id="order-reviews-message" placeholder="Ваш отзыв")
+                    label.form__label(for="order-reviews-message") Ваш отзыв
+
+
+                fieldset.form__fieldset
+                    .form__attachment
+                        .form__attachment-input
+                            input(type="file" name="attachment" id="order-reviews-attachment" multiple)
+                            label(for="order-reviews-attachment")
+                                svg(width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    use(xlink:href="#svg-attachment")
+                                | Прикрепить фотографию
+
+                        .form__attachment-upload
+                            picture
+                                source(type="image/webp" srcset="img/tmp/attachment@2x.webp 2x, img/tmp/attachment.webp 1x")
+                                source(type="image/jpeg" srcset="img/tmp/attachment@2x.jpg 2x, img/tmp/attachment.jpg 1x")
+                                img(src="img/tmp/attachment.jpg" alt="" width="60" height="60")
+                            | Фотография.png
+
+                        .form__attachment-info
+                            svg(width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                use(xlink:href="#svg-attention")
+                            | Вы можете загрузить до 5 фото формата jpg или jpeg размером не более 10Мб
+
+                .form__submit
+                    button(type="submit") Оставить отзыв
+
+        include includes/_scripts

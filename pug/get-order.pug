@@ -1,0 +1,41 @@
+doctype html
+html(lang="ru")
+    head
+        - var seo = {title: 'Оформление заказа', description: 'Оформление заказа', keywords: 'Оформление заказа'}
+        include includes/_meta
+    body
+        include includes/_header
+
+        main.main
+            include includes/_breadcrumbs
+
+            section.section.get-order._pt0
+                .container
+                    .title-nav
+                        h1.title-nav__title._active Оформление заказа
+                        a.title-nav__title(href="payment.html") Оплата
+                        a.title-nav__title(href="delivery.html") Доставка
+                        a.title-nav__title(href="guarantee.html") Гарантия
+
+                    .get-order__title Оформление Заказа происходит в несколько шагов
+
+                    .get-order__cols
+                        each val, index in ['Добавьте интересующий товар в корзину и заполните форму.', 'Для тех, кто не любит заполнять формы и предпочитает живое человеческое общение, работает. Служба заказа по телефону.', 'Получив Заказ, наш менеджер свяжется с вами по указанному телефону, чтобы все подтвердить', 'В корзине Вы сможете выбрать удобный способ оплаты.']
+                            - var i = index + 1
+                            .get-order__col
+                                .get-order__item
+                                    .get-order__content
+                                        .get-order__name= val
+                                        if i == 1
+                                            .get-order__text Обращайте внимание на поля, обязательные для заполнения: эти сведения мы просим не из любопытства, они нужны для правильного оформления вашего Заказа и оперативной доставки.
+                                    .get-order__number= i
+
+        include includes/_footer
+
+        include includes/_panel
+
+        include includes/_svg
+
+        include includes/_modal
+
+        include includes/_scripts

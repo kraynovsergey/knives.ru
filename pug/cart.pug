@@ -1,0 +1,354 @@
+doctype html
+html(lang="ru")
+    head
+        - var seo = {title: 'Корзина', description: 'Описание корзины', keywords: 'Ключи корзины'}
+        include includes/_meta
+    body
+        - var cartClass = '_active'
+        include includes/_header
+
+        main.main
+            include includes/_breadcrumbs
+
+            section.section.cart._pt0
+                .container
+                    .compare__title-wrap
+                        h1.h1 Корзина
+                            sup 2 товара
+
+                        button.compare__clear(type="button") <span>Очистить <span class="compare__clear-hidden">корзину</span></span>
+                            span.compare__clear-circle
+
+                    .cart__cols
+                        .cart__col._big
+                            .cart__items
+                                form.cart__item
+                                    .cart__item-white
+                                        .cart__item-picture
+                                            a.cart__item-picture-img(href="product.html")
+                                                picture
+                                                    source(type="image/webp" srcset="img/tmp/cart@2x.webp 2x, img/tmp/cart.webp 1x")
+                                                    source(type="image/jpeg" srcset="img/tmp/cart@2x.jpg 2x, img/tmp/cart.jpg 1x")
+                                                    img(src="img/tmp/cart.jpg" alt="" width="174" height="174")
+
+                                            a.cart__item-title._visible-mobile(href="product.html") Слайсер с покрытием black fuso
+
+                                        .cart__item-content
+                                            a.cart__item-title._hidden-mobile(href="product.html") Слайсер с покрытием black fuso
+
+                                            .cart__item-controls
+                                                .cart__item-modules
+                                                    button.product__module(type="button")
+                                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-compare")
+                                                    button.product__module(type="button")
+                                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-favourite")
+
+                                                .cart__item-modules.product-page__count
+                                                    button.product-page__count-btn._minus(type="button")
+                                                    input.product-page__count-input(type="text" name="count" value="1" readonly)
+                                                    button.product-page__count-btn._plus(type="button")
+
+                                                .cart__item-modules.cart__item-prices
+                                                    .cart__item-price._old-price 1 870 ₽
+                                                    .cart__item-price 1 496 ₽
+
+                                    button.cart__item-remove
+
+                                form.cart__item
+                                    .cart__item-white
+                                        .cart__item-picture
+                                            a.cart__item-picture-img(href="product.html")
+                                                picture
+                                                    source(type="image/webp" srcset="img/tmp/cart@2x.webp 2x, img/tmp/cart.webp 1x")
+                                                    source(type="image/jpeg" srcset="img/tmp/cart@2x.jpg 2x, img/tmp/cart.jpg 1x")
+                                                    img(src="img/tmp/cart.jpg" alt="" width="174" height="174")
+
+                                            a.cart__item-title._visible-mobile(href="product.html") Слайсер с покрытием black fuso
+
+                                        .cart__item-content
+                                            a.cart__item-title._hidden-mobile(href="product.html") Слайсер с покрытием black fuso
+
+                                            .cart__item-controls
+                                                .cart__item-modules
+                                                    button.product__module(type="button")
+                                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-compare")
+                                                    button.product__module(type="button")
+                                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-favourite")
+
+                                                .cart__item-modules.product-page__count
+                                                    button.product-page__count-btn._minus(type="button")
+                                                    input.product-page__count-input(type="text" name="count" value="1" readonly)
+                                                    button.product-page__count-btn._plus(type="button")
+
+                                                .cart__item-modules.cart__item-prices
+                                                    .cart__item-price._old-price 1 870 ₽
+                                                    .cart__item-price 1 496 ₽
+
+                                    button.cart__item-remove
+
+                            .cart__promocode
+                                form.cart__promocode-form
+                                    fieldset.form__fieldset
+                                        input.form__input(type="text" name="promocode" id="cart-promocode" placeholder="Промокод")
+                                        label.form__label(for="cart-promocode") Промокод
+                                        button.form__clear(type="button")
+                                    button.cart__promocode-btn.arrow-triangle._right(type="submit")
+
+                                .cart__promocode-results
+                                    .cart__promocode-result
+                                        span Товаров на:
+                                        span 150 000 ₽
+                                    .cart__promocode-result
+                                        span Скидка:
+                                        span._red -2 000 ₽
+
+                            form.cart__form
+                                fieldset.cart__form-fieldset
+                                    .cart__form-title Укажите ваш город или поселок
+
+                                    .cart__form-select
+                                        .cart__form-select-input
+                                            input.form__input(type="text" name="city" placeholder="Город или поселок")
+                                            button.arrow-triangle._down(type="button")
+
+                                        .cart__form-select-wrap
+                                            fieldset.filter-aside__radio.form__radio
+                                                input.filter-aside__radio-input(type="radio" name="categories" id="choose-city-1" value="Владимир")
+                                                label.filter-aside__radio-label(for="choose-city-1")
+                                                    span.filter-aside__radio-circle
+                                                    span.filter-aside__radio-text Владимир
+
+                                            fieldset.filter-aside__radio.form__radio
+                                                input.filter-aside__radio-input(type="radio" name="categories" id="choose-city-2" value="Москва")
+                                                label.filter-aside__radio-label(for="choose-city-2")
+                                                    span.filter-aside__radio-circle
+                                                    span.filter-aside__radio-text Москва
+
+                                            fieldset.filter-aside__radio.form__radio
+                                                input.filter-aside__radio-input(type="radio" name="categories" id="choose-city-3" value="Санкт-Петербург")
+                                                label.filter-aside__radio-label(for="choose-city-3")
+                                                    span.filter-aside__radio-circle
+                                                    span.filter-aside__radio-text Санкт-Петербург
+
+                                            fieldset.filter-aside__radio.form__radio
+                                                input.filter-aside__radio-input(type="radio" name="categories" id="choose-city-4" value="Екатеринбург")
+                                                label.filter-aside__radio-label(for="choose-city-4")
+                                                    span.filter-aside__radio-circle
+                                                    span.filter-aside__radio-text Екатеринбург
+
+                                            fieldset.filter-aside__radio.form__radio
+                                                input.filter-aside__radio-input(type="radio" name="categories" id="choose-city-5" value="Нижний Новгород")
+                                                label.filter-aside__radio-label(for="choose-city-5")
+                                                    span.filter-aside__radio-circle
+                                                    span.filter-aside__radio-text Нижний Новгород
+
+                                            fieldset.filter-aside__radio.form__radio
+                                                input.filter-aside__radio-input(type="radio" name="categories" id="choose-city-6" value="Пермь")
+                                                label.filter-aside__radio-label(for="choose-city-6")
+                                                    span.filter-aside__radio-circle
+                                                    span.filter-aside__radio-text Пермь
+
+                                            fieldset.filter-aside__radio.form__radio
+                                                input.filter-aside__radio-input(type="radio" name="categories" id="choose-city-7" value="Новосибирск")
+                                                label.filter-aside__radio-label(for="choose-city-7")
+                                                    span.filter-aside__radio-circle
+                                                    span.filter-aside__radio-text Новосибирск
+
+                                            fieldset.filter-aside__radio.form__radio
+                                                input.filter-aside__radio-input(type="radio" name="categories" id="choose-city-8" value="Казань")
+                                                label.filter-aside__radio-label(for="choose-city-8")
+                                                    span.filter-aside__radio-circle
+                                                    span.filter-aside__radio-text Казань
+
+                                            fieldset.filter-aside__radio.form__radio
+                                                input.filter-aside__radio-input(type="radio" name="categories" id="choose-city-9" value="Челябинск")
+                                                label.filter-aside__radio-label(for="choose-city-9")
+                                                    span.filter-aside__radio-circle
+                                                    span.filter-aside__radio-text Челябинск
+
+                                fieldset.cart__form-fieldset
+                                    .cart__form-title Способы доставки
+
+                                    .cart__form-radios
+                                        .cart__form-radio
+                                            .filter-aside__radio.form__radio
+                                                input.filter-aside__radio-input(type="radio" name="delivery" id="cart-delivery-1" value="Почта России (самовывоз)")
+                                                label.filter-aside__radio-label(for="cart-delivery-1")
+                                                    span.filter-aside__radio-circle
+                                                    span.filter-aside__radio-text Почта России (самовывоз)
+                                            .cart__form-radio-desc
+                                                span._bold 2-4 дней
+                                                span._grey 1 390 ₽
+                                                span._bold 0 ₽
+
+                                    .cart__form-radio
+                                        .filter-aside__radio.form__radio
+                                            input.filter-aside__radio-input(type="radio" name="delivery" id="cart-delivery-2" value="СДЭК (Самовывоз)" checked)
+                                            label.filter-aside__radio-label(for="cart-delivery-2")
+                                                span.filter-aside__radio-circle
+                                                span.filter-aside__radio-text СДЭК (Самовывоз)
+                                        .cart__form-radio-desc
+                                            span._bold 7-9 дней
+                                            span._grey 6 871 ₽
+                                            span._bold 0 ₽
+
+                                    //.cart__form-radio
+                                        .filter-aside__radio.form__radio
+                                            input.filter-aside__radio-input(type="radio" name="delivery" id="cart-delivery-3" value="Ozon rocket (Самовывоз)")
+                                            label.filter-aside__radio-label(for="cart-delivery-3")
+                                                span.filter-aside__radio-circle
+                                                span.filter-aside__radio-text Ozon rocket (Самовывоз)
+                                        .cart__form-radio-desc
+                                            span._bold 6 дней
+                                            span._grey 1 400 ₽
+                                            span._bold 0 ₽
+
+                                fieldset.cart__form-fieldset
+                                    .cart__form-title Способы оплаты
+
+                                    .cart__form-radios
+                                        .cart__form-radio
+                                            .filter-aside__radio.form__radio
+                                                input.filter-aside__radio-input(type="radio" name="payment" id="cart-payment-1" value="Онлайн оплата")
+                                                label.filter-aside__radio-label(for="cart-payment-1")
+                                                    span.filter-aside__radio-circle
+                                                    span.filter-aside__radio-text Онлайн оплата
+                                            .cart__form-radio-desc
+                                                span Комиссия: <strong>0%</strong>
+
+                                        .cart__form-radio
+                                            .filter-aside__radio.form__radio
+                                                input.filter-aside__radio-input(type="radio" name="payment" id="cart-payment-2" value="Оплата при получении" checked)
+                                                label.filter-aside__radio-label(for="cart-payment-2")
+                                                    span.filter-aside__radio-circle
+                                                    span.filter-aside__radio-text Оплата при получении
+                                            .cart__form-radio-desc
+                                                span Комиссия: <strong>0%</strong>
+
+                                        .cart__form-radio
+                                            .filter-aside__radio.form__radio
+                                                input.filter-aside__radio-input._cart-attention(type="checkbox" name="bonuses" id="cart-bonuses" value="Оплата бонусами")
+                                                label.filter-aside__radio-label(for="cart-bonuses")
+                                                    span.filter-aside__checkbox-circle
+                                                    span.filter-aside__radio-text Списать бонусы
+                                            .cart__form-radio-desc
+                                                span Доступно: <strong>1200 Бонусов</strong>
+
+                                        .cart__form-attention Для оплаты заказа бонусами <a href="#" data-src="#modal-auth" data-fancybox>авторизуйтесь</a>
+
+                                fieldset.cart__form-fieldset
+                                    .cart__form-title Покупатель
+
+                                    .cart__form-cols
+                                        fieldset.cart__form-col
+                                            fieldset.form__fieldset
+                                                input.form__input(type="text" name="firstname" id="cart-firstname" placeholder="Ваше имя")
+                                                label.form__label(for="cart-firstname") Ваше имя
+                                                button.form__clear(type="button")
+
+                                        fieldset.cart__form-col
+                                            fieldset.form__fieldset
+                                                input.form__input(type="text" name="lastname" id="cart-lastname" placeholder="Ваша фамилия")
+                                                label.form__label(for="cart-lastname") Ваша фамилия
+                                                button.form__clear(type="button")
+
+                                        fieldset.cart__form-col
+                                            fieldset.form__fieldset
+                                                input.form__input(type="tel" name="phone" id="cart-phone" placeholder="Ваш телефон")
+                                                label.form__label(for="cart-phone") Ваш телефон
+                                                button.form__clear(type="button")
+
+                                        fieldset.cart__form-col
+                                            fieldset.form__fieldset
+                                                input.form__input(type="email" name="email" id="cart-email" placeholder="Ваш e-mail")
+                                                label.form__label(for="cart-email") Ваш e-mail
+                                                button.form__clear(type="button")
+
+                                    fieldset.form__fieldset
+                                        input.form__input(type="tel" name="point" id="cart-point" placeholder="Пункт выдачи" disabled)
+                                        label.form__label(for="cart-point") Пункт выдачи
+                                        button.form__clear(type="button")
+
+                                    fieldset.form__fieldset
+                                        textarea.form__textarea(name="message" id="cart-message" placeholder="Комментарий к заказу")
+                                        label.form__label(for="cart-point") Комментарий к заказу
+                                        button.form__clear(type="button")
+
+                                .cart__form-fieldset
+                                    .cart__form-totals
+                                        .cart__form-total
+                                            span Товаров на:
+                                            span 150 000 ₽
+
+                                        .cart__form-total
+                                            span Бонусы:
+                                            span._blue +3 000 ₽
+
+                                        .cart__form-total
+                                            span Скидка:
+                                            span._red -2 000 ₽
+
+                                        .cart__form-total
+                                            span Доставка:
+                                            span._line
+                                                em 1 500 ₽
+                                                em 0 ₽
+
+                                        .cart__form-total
+                                            span Итого:
+                                            span 138 000 ₽
+
+                                .cart__form-policy
+                                    input(type="checkbox" name="policy" id="cart-policy" checked)
+                                    label(for="cart-policy")
+                                        span.cart__form-policy-check
+                                        span Даю согласие на <a href="index.html" target="_blank">обработку личных данных</a>
+
+                                .form__submit
+                                    button(type="submit") Оформить заказ
+
+                        .cart__col._small
+                            .cart__sticky
+                                .cart__sticky-title Ваш заказ
+
+                                .cart__sticky-params
+                                    .cart__sticky-param
+                                        span Товаров на:
+                                        span 5 000 000 ₽
+                                    .cart__sticky-param
+                                        span Бонусы:
+                                        span._blue +150 000 ₽
+                                    .cart__sticky-param
+                                        span Скидка:
+                                        span._red -2 000 ₽
+
+                                .cart__sticky-block
+                                    .cart__sticky-block-title Способ доставки
+                                    .cart__sticky-block-value
+                                        span СДЭК (Самовывоз)
+                                        span
+                                            em._line 500 ₽
+                                            em 0 ₽
+
+                                .cart__sticky-block
+                                    .cart__sticky-block-title Способ оплаты
+                                    .cart__sticky-block-value._nocols Оплата при получении
+
+                                .cart__sticky-itogo
+                                    span Итого:
+                                    span 5 150 200 ₽
+
+        include includes/_footer
+
+        - var panelCartClass = '_active';
+        include includes/_panel
+
+        include includes/_svg
+
+        include includes/_modal
+
+        include includes/_scripts

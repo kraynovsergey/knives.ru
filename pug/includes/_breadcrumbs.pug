@@ -1,0 +1,19 @@
+if breadcrumbs == 'small'
+    - var cl = '_small'
+.breadcrumbs(class= cl)
+    .container
+        .breadcrumbs__list-wrapper
+            if breadcrumbs == 'small'
+            else
+                ul.breadcrumbs__list
+                    li
+                        a(href="index.html") Главная
+                    li
+                        a(href="catalog.html") Каталог
+                    li
+                        span Кухонные ножи
+
+            a.breadcrumbs__mobile(href="catalog.html")
+                svg(width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+                    use(xlink:href="#svg-arrow")
+                | Каталог

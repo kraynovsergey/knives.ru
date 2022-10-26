@@ -1,0 +1,39 @@
+doctype html
+html(lang="ru")
+    head
+        - var seo = {title: 'Гарантия', description: 'Гарантия', keywords: 'Гарантия'}
+        include includes/_meta
+    body
+        include includes/_header
+
+        main.main
+            include includes/_breadcrumbs
+
+            section.section.get-order._pt0
+                .container
+                    .title-nav
+                        a.title-nav__title(href="get-order.html") Оформление заказа
+                        a.title-nav__title(href="payment.html") Оплата
+                        a.title-nav__title(href="delivery.html") Доставка
+                        h1.title-nav__title._active Гарантия
+
+                    .get-order__cols
+                        each val, index in ['На все изделия распространяется гарантия 12 месяцев от производственных дефектов, при соблюдении эксплуатации, транспортирования и хранения.', 'На продукцию ООО ПП "Кизляр" распространяется пожизненная гарантия от заводских дефектов.', 'При обнаружении брака мы гарантируем замену, ремонт, либо полный возврат денежных средств.', 'Срок возврата товара надлежащего качества составляет 14 дней с момента получения товара.', 'Возврат переведенных средств, производится на Ваш банковский счет в течение 5-30 рабочих дней (срок зависит от банка, который выдал Вашу банковскую карту), либо другим удобным для Вас способом.']
+                            - var i = index + 1
+                            if i == 5
+                                - var width = '_full'
+                            .get-order__col(class= width)
+                                .get-order__item
+                                    .get-order__content
+                                        .get-order__name= val
+                                    .get-order__number= i
+
+        include includes/_footer
+
+        include includes/_panel
+
+        include includes/_svg
+
+        include includes/_modal
+
+        include includes/_scripts

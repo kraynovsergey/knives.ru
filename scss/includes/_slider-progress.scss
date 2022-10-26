@@ -1,0 +1,23 @@
+.slider-progress.swiper-pagination {
+	position: relative;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: none;
+	margin: 15px 15px 0;
+	width: calc(100% - 30px);
+	border-radius: 10px;
+	height: 3px;
+	overflow: hidden;
+	background: $color_grey;
+
+	@media (max-width: 767px) {
+		display: block;
+	}
+
+	& .swiper-pagination-progressbar-fill {
+		background: rgba(0,0,0,.3);
+		border-radius: 10px;
+	}
+}

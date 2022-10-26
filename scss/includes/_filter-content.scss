@@ -1,0 +1,382 @@
+.filter-content {
+	margin-bottom: 15px;
+
+	@media (max-width: 991px) {
+		overflow-x: auto;
+
+		&::-webkit-scrollbar {
+			width: 0;
+			height: 0;
+		}
+	}
+
+	@media (max-width: 575px) {
+		margin-right: -20px;
+		padding-right: 20px;
+	}
+
+	&__form {
+		display: flex;
+		margin: 0 -5px;
+
+		@media (max-width: 991px) {
+			margin: 0;
+		}
+	}
+
+	&__item {
+		padding: 0 5px;
+		width: 14.8%;
+		position: relative;
+
+		@media (max-width: 991px) {
+			padding: 0;
+			width: auto;
+			margin-right: 5px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	&__title {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		height: 40px;
+		background: $color_white;
+		padding: 0 15px;
+		border: 1px solid $color_grey;
+		border-radius: 15px;
+		font-size: .5rem;
+		font-weight: 500;
+
+		@media (max-width: 1480px) {
+			font-size: .45rem;
+		}
+
+		@media (max-width: 991px) {
+			white-space: nowrap;
+			height: 32px;
+			font-size: .66rem;
+
+			&::after {
+				display: none;
+			}
+		}
+
+		&._active {
+			background: $color_grey;
+
+			&::after {
+				transform: rotate(135deg);
+				top: 3px;
+			}
+
+			& + .filter-content__block {
+				display: flex;
+
+				@media (max-width: 991px) {
+					bottom: 0;
+				}
+			}
+
+			@media (max-width: 991px) {
+				&::before {
+					content: '';
+					position: fixed;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					height: 100vh;
+					display: block;
+					background: rgba(0, 0, 51, 0.3);
+					z-index: 19;
+				}
+			}
+		}
+	}
+
+	&__block {
+		position: absolute;
+		top: calc(100% + 10px);
+		left: 5px;
+		background: $color_white;
+		border: 1px solid $color_grey;
+		padding: 10px;
+		min-width: 176px;
+		border-radius: 15px;
+		overflow: hidden;
+		display: none;
+		flex-direction: column;
+		align-items: flex-start;
+		transition: $transition;
+		z-index: 3;
+
+		@media (max-width: 991px) {
+			position: fixed;
+			left: 0;
+			right: 0;
+			top: unset;
+			bottom: -100vh;
+			width: 100%;
+			min-width: 100%;
+			z-index: 20;
+			max-height: calc(100vh - 16px);
+			padding: 30px 0;
+			border-radius: 30px 30px 0 0;
+			border: 0;
+			display: flex;
+		}
+
+		&._right {
+			left: unset;
+			right: 0;
+		}
+
+		&-scroll {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			align-items: flex-start;
+			max-height: 350px;
+			overflow-y: auto;
+
+			@media (max-width: 991px) {
+				flex-direction: row;
+				flex-wrap: wrap;
+			}
+		}
+
+		& .container {
+			@media (min-width: 992px) {
+				width: 100%;
+				max-width: 100%;
+				padding: 0;
+			}
+
+			@media (max-width: 991px) {
+				padding: 0 30px;
+			}
+		}
+	}
+
+	&__sorting {
+		padding: 0;
+		align-items: stretch;
+
+		@media (max-width: 991px) {
+			padding: 30px 0;
+		}
+
+		&-item {
+			@media (max-width: 991px) {
+				margin-bottom: 15px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+
+			& input {
+				display: none;
+
+				&:checked {
+					& + label {
+						background: $color_grey;
+
+						@media (max-width: 991px) {
+							background: none;
+							color: $color_blue;
+						}
+					}
+				}
+			}
+
+			& label {
+				white-space: nowrap;
+				height: 32px;
+				display: flex;
+				padding: 0 14px;
+				font-size: .5rem;
+				font-weight: 500;
+				align-items: center;
+				cursor: pointer;
+
+				@media (max-width: 991px) {
+					height: auto;
+					padding: 0;
+					font-size: 1rem;
+				}
+
+				&:hover {
+					background: rgba(0,0,0,.05);
+
+					@media (max-width: 991px) {
+						background: none;
+					}
+				}
+			}
+		}
+	}
+
+	&__checkbox {
+		@media (max-width: 991px) {
+			margin-right: 10px;
+		}
+
+		& label {
+			font-size: .5rem;
+			border-radius: 10px;
+			height: 34px;
+			white-space: nowrap;
+
+			@media (max-width: 991px) {
+				height: 40px;
+				font-size: .77rem;
+				border-radius: 15px;
+			}
+		}
+	}
+
+	&__submit {
+		background: $color_blue;
+		margin-top: 10px;
+		width: 100%;
+		height: 34px;
+		color: $color_white;
+		border-radius: 10px;
+		font-size: .5rem;
+		font-weight: 500;
+		position: relative;
+		display: none;
+
+		@media (max-width: 991px) {
+			height: 64px;
+			margin-top: 20px;
+			font-size: 1rem;
+			font-weight: 600;
+			border-radius: 32px;
+		}
+
+		&._active {
+			display: block;
+		}
+
+		&:hover {
+			background: $color_blue_middle;
+		}
+
+		&-count {
+			height: 16px;
+			position: absolute;
+			padding: 2px 2px 2px 5px;
+			display: flex;
+			align-items: center;
+			border-radius: 10px;
+			font-size: .41rem;
+			font-weight: 600;
+			right: 10px;
+			top: calc(50% - 8px);
+			background: $color_white;
+			color: $color_black;
+
+			@media (max-width: 991px) {
+				height: 20px;
+				right: 22px;
+				padding-left: 7px;
+				font-size: .77rem;
+				top: calc(50% - 10px);
+			}
+		}
+
+		&-text {
+			position: relative;
+			top: 1px;
+		}
+
+		&-remove {
+			min-width: 12px;
+			max-width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			background: $color_blue;
+			margin-left: 2px;
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			z-index: 1;
+			cursor: pointer;
+
+			@media (max-width: 991px) {
+				min-width: 16px;
+				max-width: 16px;
+				height: 16px;
+				margin-left: 5px;
+			}
+
+			&::before,
+			&::after {
+				content: '';
+				width: 1px;
+				height: 6px;
+				background: $color_white;
+				position: absolute;
+			}
+
+			&::before {
+				transform: rotate(45deg);
+			}
+
+			&::after {
+				transform: rotate(-45deg);
+			}
+		}
+	}
+
+	&__title-mobile {
+		display: none;
+		align-items: center;
+		justify-content: space-between;
+		font-size: .77rem;
+		font-weight: 600;
+		color: $color_black_opacity;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+
+		@media (max-width: 991px) {
+			display: flex;
+		}
+
+		& button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-width: 20px;
+			max-width: 20px;
+			height: 20px;
+			position: relative;
+
+			&::before,
+			&::after {
+				content: '';
+				width: 2px;
+				height: 20px;
+				background: $color_black;
+				position: absolute;
+			}
+
+			&::before {
+				transform: rotate(45deg);
+			}
+
+			&::after {
+				transform: rotate(-45deg);
+			}
+		}
+	}
+}

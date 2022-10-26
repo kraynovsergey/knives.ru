@@ -1,0 +1,31 @@
+.panel
+    .container.panel__controls
+        a.panel__control(href="index.html" class =panelHomeClass)
+            svg._fill(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                use(xlink:href="#svg-home")
+            | Главная
+
+        a.panel__control(href="compare.html" class =panelCompareClass)
+            svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                use(xlink:href="#svg-compare")
+            | Сравнение
+
+        a.panel__control(href="cart.html" class =panelCartClass)
+            svg._fill(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                use(xlink:href="#svg-cart")
+            | Корзина
+            span.panel__cart 5
+
+        a.panel__control(href="favourite.html" class =panelFavouriteClass)
+            svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                use(xlink:href="#svg-favourite")
+            | Избранное
+
+        button.panel__control(type="button" data-src="#modal-auth" data-fancybox class =panelProfileClass)
+            svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                use(xlink:href="#svg-profile")
+            | Профиль
+
+
+
+

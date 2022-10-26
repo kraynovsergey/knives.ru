@@ -1,0 +1,55 @@
+.brands {
+	&__carousel {
+		position: relative;
+		padding-right: 90px;
+
+		@media (max-width: 575px) {
+			padding-right: 20px;
+			margin-right: -20px;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 90px;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			background: linear-gradient(270deg, #F1F3F8 0%, rgba(241, 243, 248, 0) 100%);
+			z-index: 5;
+
+			@media (max-width: 575px) {
+				display: none;
+			}
+		}
+	}
+
+	&__slide {
+		width: auto;
+		height: unset;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		& img {
+			max-width: 190px;
+			max-height: 140px;
+			width: unset;
+			height: unset;
+			transition: $transition;
+			opacity: .3;
+
+			@media (max-width: 991px) {
+				max-width: 150px;
+				max-height: 90px;
+			}
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}

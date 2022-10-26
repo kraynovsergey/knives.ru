@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/js/libs/fancybox.umd.min.js" />
+        <item url="file://$PROJECT_DIR$/js/libs/swiper-bundle.min.min.js" />
+        <item url="file://$PROJECT_DIR$/js/scripts.min.js" />
+        <item url="file://$PROJECT_DIR$/js/scripts.min.min.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/js/libs/fancybox.umd.min.js" />
+      <root url="file://$PROJECT_DIR$/js/libs/swiper-bundle.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/scripts.min.js" />
+      <root url="file://$PROJECT_DIR$/js/scripts.min.min.js" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

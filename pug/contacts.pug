@@ -1,0 +1,55 @@
+doctype html
+html(lang="ru")
+    head
+        - var seo = {title: 'Контакты', description: 'Контакты', keywords: 'Контакты'}
+        include includes/_meta
+    body
+        include includes/_header
+
+        main.main
+            include includes/_breadcrumbs
+
+            section.section.contacts._pt0
+                .container
+                    h1.h1 Контакты
+
+                    .contacts__cols
+                        .contacts__col
+                            .contacts__title knives.ru - маркетплейс ножей
+                            .contacts__title ООО “МЕГАТОРГ”
+
+                            .contacts__requisites
+                                .contacts__requisites-item
+                                    span ИНН
+                                    span 1235002212
+                                .contacts__requisites-item
+                                    span КПП
+                                    span 1002010235
+                                .contacts__requisites-item
+                                    span ОГРН
+                                    span 501235678
+
+                        .contacts__col
+                            .footer__contact
+                                a.footer__contact-value(href="tel:+78005553535") +7 800 555-35-35
+                                .footer__contact-text бесплатно по РФ
+
+                            .footer__contact
+                                a.footer__contact-value(href="tel:+78005553535") +7 800 555-35-35
+                                .footer__contact-text написать в <a href="https://api.whatsapp.com/send?phone=78005553535" class="footer__contact-link" target="_blank" rel="nofollow">WhatsApp</a>
+
+                            .footer__contact
+                                a.footer__contact-value(href="mailto:info@knives.ru") info@knives.ru
+                                .footer__contact-text вопросы и предложения
+
+                            button.footer__button(type="button" data-src="#modal-question" data-fancybox) Задайте ваш вопрос
+
+        include includes/_footer
+
+        include includes/_panel
+
+        include includes/_svg
+
+        include includes/_modal
+
+        include includes/_scripts

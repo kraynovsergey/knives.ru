@@ -1,0 +1,655 @@
+doctype html
+html(lang="ru")
+    head
+        - var seo = {title: 'Страница не найдена', description: 'Страница не найдена', keywords: 'Страница не найдена'}
+        include includes/_meta
+    body
+        include includes/_header
+
+        main.main
+            - var breadcrumbs = 'small'
+            include includes/_breadcrumbs
+
+            section
+                .container
+                    .not-found
+                        svg.not-found__svg(width="938" height="200" viewBox="0 0 938 200" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            use(xlink:href="#svg-not-found")
+                        .not-found__subtitle К сожалению, указанная страница не найдена.
+                        .not-found__text Воспользуйтесь поиском или перейдите в <a href="categories.html">каталог товаров</a>
+
+            .section.popular
+                .container
+                    .section__title-wrapper
+                        h2.section__title Хиты продаж
+                        a.section__all._blue(href="catalog.html") Все хиты
+
+                    .popular__content._active._visible
+                        .popular__carousel.swiper
+                            .swiper-wrapper
+                                .popular__slide.swiper-slide
+                                    .product
+                                        .product__labels
+                                            .product__label._blue Новинка
+
+                                        .product__col
+                                            picture.product__picture
+                                                source(type="image/webp" srcset="img/tmp/product-popular-1@2x.webp 2x, img/tmp/product-popular-1.webp 1x")
+                                                source(type="image/jpeg" srcset="img/tmp/product-popular-1@2x.jpg 2x, img/tmp/product-popular-1.jpg 1x")
+                                                img(src="img/tmp/product-popular-1.jpg" alt="" width="266" height="266")
+
+                                            a.product__title(href="product.html") Слайсер с покрытием black fuso
+
+                                        .product__col
+                                            .stars
+                                                .stars__icons
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                        .reviews-total__star-half
+                                                            svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                                use(xlink:href="#svg-star")
+                                                a.stars__count(href="product.html#product-reviews") 456
+
+                                            .product__params
+                                                .product__param
+                                                    span Бренд
+                                                    span Samura
+                                                .product__param
+                                                    span Толщина
+                                                    span 3 мм
+                                                .product__param
+                                                    span Длина
+                                                    span 196 мм
+                                                .product__param
+                                                    span Сталь
+                                                    span AUS-8
+                                                .product__param
+                                                    span Твердость
+                                                    span 57-59 HRO
+                                                
+
+                                            .product__offer
+                                                .product__prices
+                                                    .product__price 1 496 ₽
+                                                    .product__price._old-price 1 870 ₽
+                                                //Класс _false для нет в наличии
+                                                .product__available._true В наличии
+
+                                            .product__controls
+                                                form.product__cart
+                                                    button(type="submit")
+                                                        span._desktop Добавить в корзину
+                                                        span._mobile В корзину
+
+                                                .product__modules
+                                                    //Класс _active для активной кнопки
+                                                    button.product__module(type="button")
+                                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-compare")
+                                                    button.product__module(type="button")
+                                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-favourite")
+
+                                .popular__slide.swiper-slide
+                                    .product
+                                        .product__labels
+                                            .product__label._blue Новинка
+
+                                        .product__col
+                                            picture.product__picture
+                                                source(type="image/webp" srcset="img/tmp/product-popular-2@2x.webp 2x, img/tmp/product-popular-2.webp 1x")
+                                                source(type="image/jpeg" srcset="img/tmp/product-popular-2@2x.jpg 2x, img/tmp/product-popular-2.jpg 1x")
+                                                img(src="img/tmp/product-popular-2.jpg" alt="" width="266" height="266")
+
+                                            a.product__title(href="product-pre-order.html") Слайсер с покрытием black fuso
+
+                                        .product__col
+                                            .stars
+                                                .stars__icons
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                        .reviews-total__star-half
+                                                            svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                                use(xlink:href="#svg-star")
+                                                a.stars__count(href="product-pre-order.html#product-reviews") 456
+
+                                            .product__params
+                                                .product__param
+                                                    span Бренд
+                                                    span Samura
+                                                .product__param
+                                                    span Толщина
+                                                    span 3 мм
+                                                .product__param
+                                                    span Длина
+                                                    span 196 мм
+                                                .product__param
+                                                    span Сталь
+                                                    span AUS-8
+                                                .product__param
+                                                    span Твердость
+                                                    span 57-59 HRO
+                                                
+
+                                            .product__offer
+                                                .product__prices
+                                                    .product__price 1 496 ₽
+                                                    .product__price._old-price 1 870 ₽
+                                                //Класс _false для нет в наличии
+                                                .product__available._false Нет в наличии
+
+                                            .product__controls
+                                                form.product__cart
+                                                    button(type="button" data-src="#modal-pre-order" data-fancybox) Предзаказ
+
+                                                .product__modules
+                                                    //Класс _active для активной кнопки
+                                                    button.product__module(type="button")
+                                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-compare")
+                                                    button.product__module(type="button")
+                                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-favourite")
+
+                                .popular__slide.swiper-slide
+                                    .product
+                                        .product__labels
+                                            .product__label._blue Новинка
+
+                                        .product__col
+                                            picture.product__picture
+                                                source(type="image/webp" srcset="img/tmp/product-popular-3@2x.webp 2x, img/tmp/product-popular-3.webp 1x")
+                                                source(type="image/jpeg" srcset="img/tmp/product-popular-3@2x.jpg 2x, img/tmp/product-popular-3.jpg 1x")
+                                                img(src="img/tmp/product-popular-3.jpg" alt="" width="266" height="266")
+
+                                            a.product__title(href="product.html") Слайсер с покрытием black fuso
+
+                                        .product__col
+                                            .stars
+                                                .stars__icons
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                        .reviews-total__star-half
+                                                            svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                                use(xlink:href="#svg-star")
+                                                a.stars__count(href="product.html#product-reviews") 456
+
+                                            .product__params
+                                                .product__param
+                                                    span Бренд
+                                                    span Samura
+                                                .product__param
+                                                    span Толщина
+                                                    span 3 мм
+                                                .product__param
+                                                    span Длина
+                                                    span 196 мм
+                                                .product__param
+                                                    span Сталь
+                                                    span AUS-8
+                                                .product__param
+                                                    span Твердость
+                                                    span 57-59 HRO
+                                                
+
+                                            .product__offer
+                                                .product__prices
+                                                    .product__price 1 496 ₽
+                                                    .product__price._old-price 1 870 ₽
+                                                //Класс _false для нет в наличии
+                                                .product__available._true В наличии
+
+                                            .product__controls
+                                                form.product__cart
+                                                    button(type="submit")
+                                                        span._desktop Добавить в корзину
+                                                        span._mobile В корзину
+
+                                                .product__modules
+                                                    //Класс _active для активной кнопки
+                                                    button.product__module(type="button")
+                                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-compare")
+                                                    button.product__module(type="button")
+                                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-favourite")
+
+                                .popular__slide.swiper-slide
+                                    .product
+                                        .product__labels
+                                            .product__label._blue Новинка
+
+                                        .product__col
+                                            picture.product__picture
+                                                source(type="image/webp" srcset="img/tmp/product-popular-4@2x.webp 2x, img/tmp/product-popular-4.webp 1x")
+                                                source(type="image/jpeg" srcset="img/tmp/product-popular-4@2x.jpg 2x, img/tmp/product-popular-4.jpg 1x")
+                                                img(src="img/tmp/product-popular-4.jpg" alt="" width="266" height="266")
+
+                                            a.product__title(href="product.html") Слайсер с покрытием black fuso
+
+                                        .product__col
+                                            .stars
+                                                .stars__icons
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                        .reviews-total__star-half
+                                                            svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                                use(xlink:href="#svg-star")
+                                                a.stars__count(href="product.html#product-reviews") 456
+
+                                            .product__params
+                                                .product__param
+                                                    span Бренд
+                                                    span Samura
+                                                .product__param
+                                                    span Толщина
+                                                    span 3 мм
+                                                .product__param
+                                                    span Длина
+                                                    span 196 мм
+                                                .product__param
+                                                    span Сталь
+                                                    span AUS-8
+                                                .product__param
+                                                    span Твердость
+                                                    span 57-59 HRO
+                                                
+
+                                            .product__offer
+                                                .product__prices
+                                                    .product__price 1 496 ₽
+                                                    .product__price._old-price 1 870 ₽
+                                                //Класс _false для нет в наличии
+                                                .product__available._true В наличии
+
+                                            .product__controls
+                                                form.product__cart
+                                                    button(type="submit")
+                                                        span._desktop Добавить в корзину
+                                                        span._mobile В корзину
+
+                                                .product__modules
+                                                    //Класс _active для активной кнопки
+                                                    button.product__module(type="button")
+                                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-compare")
+                                                    button.product__module(type="button")
+                                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-favourite")
+
+                                .popular__slide.swiper-slide
+                                    .product
+                                        .product__labels
+                                            .product__label._blue Новинка
+
+                                        .product__col
+                                            picture.product__picture
+                                                source(type="image/webp" srcset="img/tmp/product-popular-1@2x.webp 2x, img/tmp/product-popular-1.webp 1x")
+                                                source(type="image/jpeg" srcset="img/tmp/product-popular-1@2x.jpg 2x, img/tmp/product-popular-1.jpg 1x")
+                                                img(src="img/tmp/product-popular-1.jpg" alt="" width="266" height="266")
+
+                                            a.product__title(href="product.html") Слайсер с покрытием black fuso
+
+                                        .product__col
+                                            .stars
+                                                .stars__icons
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                        .reviews-total__star-half
+                                                            svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                                use(xlink:href="#svg-star")
+                                                a.stars__count(href="product.html#product-reviews") 456
+
+                                            .product__params
+                                                .product__param
+                                                    span Бренд
+                                                    span Samura
+                                                .product__param
+                                                    span Толщина
+                                                    span 3 мм
+                                                .product__param
+                                                    span Длина
+                                                    span 196 мм
+                                                .product__param
+                                                    span Сталь
+                                                    span AUS-8
+                                                .product__param
+                                                    span Твердость
+                                                    span 57-59 HRO
+                                                
+
+                                            .product__offer
+                                                .product__prices
+                                                    .product__price 1 496 ₽
+                                                    .product__price._old-price 1 870 ₽
+                                                //Класс _false для нет в наличии
+                                                .product__available._true В наличии
+
+                                            .product__controls
+                                                form.product__cart
+                                                    button(type="submit")
+                                                        span._desktop Добавить в корзину
+                                                        span._mobile В корзину
+
+                                                .product__modules
+                                                    //Класс _active для активной кнопки
+                                                    button.product__module(type="button")
+                                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-compare")
+                                                    button.product__module(type="button")
+                                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-favourite")
+
+                                .popular__slide.swiper-slide
+                                    .product
+                                        .product__labels
+                                            .product__label._blue Новинка
+
+                                        .product__col
+                                            picture.product__picture
+                                                source(type="image/webp" srcset="img/tmp/product-popular-2@2x.webp 2x, img/tmp/product-popular-2.webp 1x")
+                                                source(type="image/jpeg" srcset="img/tmp/product-popular-2@2x.jpg 2x, img/tmp/product-popular-2.jpg 1x")
+                                                img(src="img/tmp/product-popular-2.jpg" alt="" width="266" height="266")
+
+                                            a.product__title(href="product.html") Слайсер с покрытием black fuso
+
+                                        .product__col
+                                            .stars
+                                                .stars__icons
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                        .reviews-total__star-half
+                                                            svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                                use(xlink:href="#svg-star")
+                                                a.stars__count(href="product.html#product-reviews") 456
+
+                                            .product__params
+                                                .product__param
+                                                    span Бренд
+                                                    span Samura
+                                                .product__param
+                                                    span Толщина
+                                                    span 3 мм
+                                                .product__param
+                                                    span Длина
+                                                    span 196 мм
+                                                .product__param
+                                                    span Сталь
+                                                    span AUS-8
+                                                .product__param
+                                                    span Твердость
+                                                    span 57-59 HRO
+                                                
+
+                                            .product__offer
+                                                .product__prices
+                                                    .product__price 1 496 ₽
+                                                    .product__price._old-price 1 870 ₽
+                                                //Класс _false для нет в наличии
+                                                .product__available._true В наличии
+
+                                            .product__controls
+                                                form.product__cart
+                                                    button(type="submit")
+                                                        span._desktop Добавить в корзину
+                                                        span._mobile В корзину
+
+                                                .product__modules
+                                                    //Класс _active для активной кнопки
+                                                    button.product__module(type="button")
+                                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-compare")
+                                                    button.product__module(type="button")
+                                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-favourite")
+
+                                .popular__slide.swiper-slide
+                                    .product
+                                        .product__labels
+                                            .product__label._blue Новинка
+
+                                        .product__col
+                                            picture.product__picture
+                                                source(type="image/webp" srcset="img/tmp/product-popular-3@2x.webp 2x, img/tmp/product-popular-3.webp 1x")
+                                                source(type="image/jpeg" srcset="img/tmp/product-popular-3@2x.jpg 2x, img/tmp/product-popular-3.jpg 1x")
+                                                img(src="img/tmp/product-popular-3.jpg" alt="" width="266" height="266")
+
+                                            a.product__title(href="product.html") Слайсер с покрытием black fuso
+
+                                        .product__col
+                                            .stars
+                                                .stars__icons
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                        .reviews-total__star-half
+                                                            svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                                use(xlink:href="#svg-star")
+                                                a.stars__count(href="product.html#product-reviews") 456
+
+                                            .product__params
+                                                .product__param
+                                                    span Бренд
+                                                    span Samura
+                                                .product__param
+                                                    span Толщина
+                                                    span 3 мм
+                                                .product__param
+                                                    span Длина
+                                                    span 196 мм
+                                                .product__param
+                                                    span Сталь
+                                                    span AUS-8
+                                                .product__param
+                                                    span Твердость
+                                                    span 57-59 HRO
+                                                
+
+                                            .product__offer
+                                                .product__prices
+                                                    .product__price 1 496 ₽
+                                                    .product__price._old-price 1 870 ₽
+                                                //Класс _false для нет в наличии
+                                                .product__available._true В наличии
+
+                                            .product__controls
+                                                form.product__cart
+                                                    button(type="submit")
+                                                        span._desktop Добавить в корзину
+                                                        span._mobile В корзину
+
+                                                .product__modules
+                                                    //Класс _active для активной кнопки
+                                                    button.product__module(type="button")
+                                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-compare")
+                                                    button.product__module(type="button")
+                                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-favourite")
+
+                                .popular__slide.swiper-slide
+                                    .product
+                                        .product__labels
+                                            .product__label._blue Новинка
+
+                                        .product__col
+                                            picture.product__picture
+                                                source(type="image/webp" srcset="img/tmp/product-popular-4@2x.webp 2x, img/tmp/product-popular-4.webp 1x")
+                                                source(type="image/jpeg" srcset="img/tmp/product-popular-4@2x.jpg 2x, img/tmp/product-popular-4.jpg 1x")
+                                                img(src="img/tmp/product-popular-4.jpg" alt="" width="266" height="266")
+
+                                            a.product__title(href="product.html") Слайсер с покрытием black fuso
+
+                                        .product__col
+                                            .stars
+                                                .stars__icons
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star._active
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                    .reviews-total__star
+                                                        svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-star")
+                                                        .reviews-total__star-half
+                                                            svg(width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                                use(xlink:href="#svg-star")
+                                                a.stars__count(href="product.html#product-reviews") 456
+
+                                            .product__params
+                                                .product__param
+                                                    span Бренд
+                                                    span Samura
+                                                .product__param
+                                                    span Толщина
+                                                    span 3 мм
+                                                .product__param
+                                                    span Длина
+                                                    span 196 мм
+                                                .product__param
+                                                    span Сталь
+                                                    span AUS-8
+                                                .product__param
+                                                    span Твердость
+                                                    span 57-59 HRO
+                                                
+
+                                            .product__offer
+                                                .product__prices
+                                                    .product__price 1 496 ₽
+                                                    .product__price._old-price 1 870 ₽
+                                                //Класс _false для нет в наличии
+                                                .product__available._true В наличии
+
+                                            .product__controls
+                                                form.product__cart
+                                                    button(type="submit")
+                                                        span._desktop Добавить в корзину
+                                                        span._mobile В корзину
+
+                                                .product__modules
+                                                    //Класс _active для активной кнопки
+                                                    button.product__module(type="button")
+                                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-compare")
+                                                    button.product__module(type="button")
+                                                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                            use(xlink:href="#svg-favourite")
+
+                        .popular__arrows.carousel-arrows
+                            button.carousel-arrows__item._prev(type="button")
+                                svg(width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    use(xlink:href="#svg-carousel-arrow")
+                            button.carousel-arrows__item._next(type="button")
+                                svg(width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    use(xlink:href="#svg-carousel-arrow")
+
+
+
+
+        include includes/_footer
+
+        include includes/_panel
+
+        include includes/_svg
+
+        include includes/_modal
+
+        include includes/_scripts

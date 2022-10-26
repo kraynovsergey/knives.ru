@@ -1,0 +1,32 @@
+.stars {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+
+	&._page {
+		margin-bottom: 20px;
+	}
+
+	&__icons {
+		display: flex;
+		align-items: center;
+		margin-top: -5px;
+
+		& .reviews-total__star {
+			height: 24px;
+			line-height: 24px;
+		}
+	}
+
+	&__count {
+		margin-left: 10px;
+		font-weight: 500;
+		font-size: .66rem;
+		color: $color_blue !important;
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
